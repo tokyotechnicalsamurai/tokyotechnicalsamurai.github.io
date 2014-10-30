@@ -25,6 +25,8 @@ img.logo{
 .ui.page.grid.relaxed.segment{
   color:#042B06;
   background-color:white ;
+  line-height:1.5;
+  text-align:center;
 }
 
 .ui.large.image.logo{
@@ -63,4 +65,3 @@ h3.minititle{
 p.bold{
   font-style:bold;
 }
-

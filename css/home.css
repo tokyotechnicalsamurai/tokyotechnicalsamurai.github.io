@@ -63,6 +63,9 @@ h1.bigtitle{
 h3.minititle{
   font-family:"Source Sans Pro";
 }
+h3.right{
+  text-align:justify;
+}
 
 .nomargin{
   margin:0.5rem;

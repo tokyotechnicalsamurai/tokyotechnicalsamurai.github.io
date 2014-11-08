@@ -83,3 +83,14 @@ a{
   text-align:center;
   display: inline-block;
 }
+.ui.items>.item{
+  min-height:200px;
+}
+.name{
+  font-size:1.5em;
+}
+.ui.menu{
+  margin: 0rem 0rem;
+  border-radius: 0;
+  min-height:20px;
+}

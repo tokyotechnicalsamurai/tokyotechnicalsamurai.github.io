@@ -36,13 +36,21 @@ img.ui.image.huge.logo{
 }
 */ 
 
-/* sponsor */
+/* FRC */
 .ui.page.grid.segment.third{
   color:#ffffff;
   background-color:black;
   line-height:1.5;
   text-align:center;
 }
+/* sponsor */
+.ui.page.grid.relaxed.segment.sponsor{
+  color;#000;
+  background-color:white;
+  line-height:1.5;
+  text-align:center;
+}
+
 
 /* footer */
 .ui.page.grid.relaxed.segment.footer{

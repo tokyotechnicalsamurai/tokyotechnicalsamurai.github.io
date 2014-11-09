@@ -28,14 +28,6 @@ img.ui.image.huge.logo{
   line-height:1.5;
   text-align:center;
 }
-/* 
-.ui.large.image.logo{
- display: block;
- margin-left: auto;
- margin-right: auto;
-}
-*/ 
-
 /* FRC */
 .ui.page.grid.segment.third{
   color:#ffffff;
@@ -97,9 +89,33 @@ a{
 .name{
   font-size:1.5em;
 }
+.ui.image{
+  margin: 0 auto;
+}
+
+/* My setting for semantic */
 .ui.menu{
   margin: 0rem 0rem;
   border-radius: 0;
   min-height:20px;
   margin-top: -10px;
 }
+.ui.sponsor-mini.images .image,
+.ui.sponsor-mini.images img,
+.ui.sponsor-mini.image {
+  width: 150px;
+  font-size:0.9rem;
+}
+.ui.sponsor.images .image,
+.ui.sponsor.images img,
+.ui.sponsor.image {
+  width: 200px;
+  font-size:0.9rem;
+}
+.ui.sponsor-big.images .image,
+.ui.sponsor-big.images img,
+.ui.sponsor-big.image {
+  width: 250px;
+  font-size:0.9rem;
+}
+

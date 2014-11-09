@@ -17,7 +17,18 @@
     <link href="images/icon.png" rel="apple-touch-icon">
     <script src="javascript/jquery.mobile.custom.min.js"></script>
     <script src="javascript/semantic.js"></script>
-    <script src="./trans.js"></script>
+    <script>
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed = 200;
+          var href = $(this.attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top - 50px;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="ui inverted small menu fixed">
@@ -26,21 +37,21 @@
           <i class="up arrow icon"></i>
           Top
         </a>
-        <a class="item">
+        <a class="item" href="#team">
           <i class="users icon"></i>
           Team
         </a>
-        <a class="item">
+        <a class="item" href="#frc">
           <i class="trophy icon"></i>
           FRC
         </a>
-        <a class="item">
+        <a class="item" href="#info">
           <i class="info icon"></i>
           Info
         </a>
       </div>
     </div>
-    <div class="ui page masthead segment grid">
+    <div class="ui page masthead segment grid" id="top">
       <div class="two wide column"></div>
       <div class="thirteen wide column">
         <br>
@@ -51,7 +62,7 @@
         <br>
       </div>
     </div>
-    <div class="ui page grid relaxed segment">
+    <div class="ui page grid relaxed segment" id="team">
       <div class="fourteen wide column">
         <br>
         <h1 class="bigtitle aligined ui header">
@@ -196,8 +207,13 @@
       </div>
       <br>
     </div>
-    <div class="ui page grid segment third">
+    <div class="ui page grid segment third" id="frc">
       <div class="fourteen wide column">
+        <br>
+        <h1 class="bigtitle aligined ui">
+          First Robotics Competition とは
+        </h1>
+        <div class="ui divider"></div>
         <h3 class="minititle aligined ui right">
           FRCについて
         </h3>
@@ -217,7 +233,7 @@
       </div>
       <br>
     </div>
-    <div class="ui page grid relaxed segment footer">
+    <div class="ui page grid relaxed segment footer" id="info">
       <div class="row">
         <div class="one wide column"></div>
         <div class="fourteen wide column">

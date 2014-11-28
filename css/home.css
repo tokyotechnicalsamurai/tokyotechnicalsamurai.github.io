@@ -70,7 +70,7 @@ h3.right{
 .nomargin{
   margin:0.5rem;
 }
-.ui.horizontal.divider{
+.ui.horizontal.divider{ 
   margin:0;
 }
 p.bold{
@@ -78,6 +78,9 @@ p.bold{
 }
 a{
   color:white;
+}
+a.black{
+	color:black;
 }
 .center{
   text-align:center;
@@ -91,6 +94,11 @@ a{
 }
 .ui.image{
   margin: 0 auto;
+}
+p.center{
+	text-align:right;
+	vertical-align:center;
+	display:inline-block;
 }
 
 /* My setting for semantic */

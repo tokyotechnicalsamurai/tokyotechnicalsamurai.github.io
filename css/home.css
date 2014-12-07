@@ -6,12 +6,12 @@ body{
 
 /* menu */
 .ui.transparent.inverted.main.menu{
-  margin:0px;
+  margin:10;
 }
 
 /* UI */
 /* Top */ 
-.ui.page.masthead.segment.grid{
+.ui.page.masthead.grid{
   background-color:red;
   display: block;
   margin-left: auto;
@@ -22,21 +22,21 @@ img.ui.image.huge.logo{
 }
 
 /* Second */
-.ui.page.grid.relaxed.segment{
+.ui.page.grid.relaxed{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
   text-align:center;
 }
 /* FRC */
-.ui.page.grid.segment.third{
+.ui.page.grid.third{
   color:#ffffff;
   background-color:black;
   line-height:1.5;
   text-align:center;
 }
 /* sponsor */
-.ui.page.grid.relaxed.segment.sponsor{
+.ui.page.grid.relaxed.sponsor{
   color;#000;
   background-color:white;
   line-height:1.5;
@@ -45,7 +45,7 @@ img.ui.image.huge.logo{
 
 
 /* footer */
-.ui.page.grid.relaxed.segment.footer{
+.ui.page.grid.relaxed.footer{
   color:#fff;
   background-color:#008ccc;
   font-size:large;
@@ -70,6 +70,7 @@ h3.right{
 .nomargin{
   margin:0.5rem;
 }
+
 .ui.horizontal.divider{ 
   margin:0;
 }
@@ -105,8 +106,8 @@ p.center{
 .ui.menu{
   margin: 0rem 0rem;
   border-radius: 0;
-  min-height:20px;
-  margin-top: -10px;
+  min-height: 0px;
+  margin-top: 0px;
 }
 .ui.sponsor-mini.images .image,
 .ui.sponsor-mini.images img,

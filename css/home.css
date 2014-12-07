@@ -6,7 +6,7 @@ body{
 
 /* menu */
 .ui.transparent.inverted.main.menu{
-  margin:10;
+  margin:0px;
 }
 
 /* UI */
@@ -83,6 +83,7 @@ a{
 a.black{
 	color:black;
 }
+a.
 .center{
   text-align:center;
   display: inline-block;
@@ -106,7 +107,7 @@ p.center{
 .ui.menu{
   margin: 0rem 0rem;
   border-radius: 0;
-  min-height: 0px;
+  min-height: 20px;
   margin-top: 0px;
 }
 .ui.sponsor-mini.images .image,

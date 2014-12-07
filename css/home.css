@@ -79,9 +79,11 @@ p.bold{
 }
 a{
   color:white;
+  text-decoration: underline;
 }
 a.black{
 	color:black;
+  text-decoration: underline;
 }
 a.
 .center{

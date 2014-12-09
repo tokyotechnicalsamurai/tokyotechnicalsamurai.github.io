@@ -27,23 +27,22 @@
         ga('create', 'UA-46319605-11', 'auto');
         ga('send', 'pageview');
   %body
-    .ui.menu.small.inverted.fixed
-      .item   
-        %a.item{:href => "#top"}
-          %i.up.arrow.icon
-          Top
-        %a.item{:href => "#team"}
-          %i.users.icon
-          Team
-        %a.item{:href => "#frc"}
-          %i.trophy.icon
-          FRC
-        %a.item{:href => "#sponsor"}
-          %i.building.icon
-          Sponsors
-        %a.item{:href => "#info"}
-          %i.info.icon
-          Info
+    .ui.inverted.small.fixed.menu
+      %a.item{:href => "#top"}
+        %i.up.arrow.icon
+        Top
+      %a.item{:href => "#team"}
+        %i.users.icon
+        Team
+      %a.item{:href => "#frc"}
+        %i.trophy.icon
+        FRC
+      %a.item{:href => "#sponsor"}
+        %i.building.icon
+        Sponsors
+      %a.item{:href => "#info"}
+        %i.info.icon
+        Info
     .ui.page.masthead.grid#top
       .two.wide.column
       .thirteen.wide.column

@@ -43,8 +43,8 @@ img.ui.image.huge.logo{
 
 /* footer */
 .ui.page.grid.relaxed.footer{
-  color:#fff;
-  background-color:#008ccc;
+  color:#000;
+  background-color:#c0c0c0;
   font-size:large;
 }
 

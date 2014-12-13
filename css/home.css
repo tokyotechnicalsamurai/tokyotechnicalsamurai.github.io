@@ -19,10 +19,9 @@ img.ui.image.huge.logo{
 }
 
 /* News! */
-.ui.page.grid.masthead#news{
+.ui.page.grid.relaxed#news{
 	background-color:red;
 	display:block;
-
 }
 
 
@@ -70,10 +69,6 @@ h3.minititle{
 }
 h3.right{
   text-align:justify;
-}
-h5.newstitle{
-	font-family:"Source Sans Pro";
-	color:black;
 }
 
 .nomargin{

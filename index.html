@@ -19,22 +19,22 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="javascript/semantic.js"></script>
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-46319605-11', 'auto');
-        ga('send', 'pageview');
-        $(function(){
-          $('a[href^=#]').click(function(){
-            var speed = 1000;
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $("html, body").animate({scrollTop:position}, speed, "swing");
-            return false;
-          });
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46319605-11', 'auto');
+      ga('send', 'pageview');
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
         });
+      });
     </script>
   </head>
   <body>
@@ -305,7 +305,11 @@
                   <image class="ui image" src="images/logo/egucologo.jpg"></image>
                 </a>
               </div>
+              <div class="column"></div>
             </div>
+            <a href="">
+              <image class="ui big image" src="images/logo/bonsai-lab-logo.png"></image>
+            </a>
           </div>
           <div class="ui divider"></div>
           <h3 class="minititle aligined ui">

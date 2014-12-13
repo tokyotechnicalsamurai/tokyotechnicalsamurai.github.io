@@ -18,7 +18,15 @@ img.ui.image.huge.logo{
   text-align: center;
 }
 
-/* Second */
+/* News! */
+.ui.page.grid.masthead#news{
+	background-color:red;
+	display:block;
+
+}
+
+
+/* Team */
 .ui.page.grid.relaxed{
   color:#042B06;
   background-color:white ;
@@ -62,6 +70,10 @@ h3.minititle{
 }
 h3.right{
   text-align:justify;
+}
+h5.newstitle{
+	font-family:"Source Sans Pro";
+	color:black;
 }
 
 .nomargin{

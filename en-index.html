@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <meta content="FRC,Tokyo Technical Samurai," name="keywords">
+    <meta content="Kasai Nobuhiro,sh4869(sh4869.net)" name="author">
+    <meta content="First Robotics Competition 参加チーム、Tokyo Technical Samuraiの公式ホームページです。" name="description">
+    <!-- Site Properities -->
+    <title>Tokyo Technical Samurai</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="css/semantic-new.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <!-- Icon setting -->
+    <link href="images/icon.png" rel="shortcut icon">
+    <link href="images/icon.png" rel="apple-touch-icon">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascript/semantic.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46319605-11', 'auto');
+      ga('send', 'pageview');
+      $(function(){
+        $('a[href^=#]').click(function(){
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="ui fluid five item inverted small fixed menu">
+      <a class="item" href="#top">
+        <i class="up arrow icon"></i>
+        Top
+      </a>
+      <a class="item" href="#team">
+        <i class="users icon"></i>
+        Team
+      </a>
+      <a class="item" href="#frc">
+        <i class="trophy icon"></i>
+        FRC
+      </a>
+      <a class="item" href="#sponsor">
+        <i class="building icon"></i>
+        Sponsors
+      </a>
+      <a class="item" href="#info">
+        <i class="info icon"></i>
+        Info
+      </a>
+    </div>
+    <div class="ui page masthead grid" id="top">
+      <div class="two wide column"></div>
+      <div class="fourteen wide column">
+        <br>
+        <div class="center">
+          <img class="ui image big logo" src="images/teamlogo.png">
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid relaxed" id="news">
+      <div class="fourteen wide column">
+        <h1 class="minititle aligined ui">
+          News
+        </h1>
+        <div class="ui celled list news">
+          <div class="item">
+            <div class="header">
+              ブログを更新いたしました。
+            </div>
+            <a class="description" href="http://tokyotsamurai.blogspot.jp/2014/12/blog-post_23.html" target="_blank">
+              【重要】チームと学校との関係について
+            </a>
+          </div>
+          <div class="item">
+            <div class="header">
+              エンジニアtype様にご紹介いただきました!
+            </div>
+            <a class="description" href="http://engineer.typemag.jp/article/frc" target="_blank">
+              最低ラインは280万円～USのロボコン『FRC』に日本で初めて挑む高校生集団が、自ら資金集めに奔走するワケ - エンジニアtype
+            </a>
+          </div>
+          <div class="item">
+            <div class="header">
+              スイッチサイエンスさんに紹介していただきました!
+            </div>
+            <a class="description" href="http://mag.switch-science.com/2014/12/10/tokyo-technical-samurai/" target="_blank">
+              Tokyo Technical Samuraiがスイッチサイエンスに来てくれました！- スイッチサイエンスマガジン
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid relaxed" id="team">
+      <div class="fourteen wide column">
+        <br>
+        <h1 class="bigtitle aligined ui header">
+          Tokyo Technical Samurai
+        </h1>
+        <div class="ui divider"></div>
+        <h3 class="minititle aligined ui">
+          Tokyo Technical Samuraiとは?
+        </h3>
+        Tokyo Technical Samuraiとは、ロボット競技大会FRCに参加する日本初の高校生団体です。
+        <br>
+        高等学校の有志生徒10人で形成されたチームです。
+        <h3 class="minititle aligined ui">
+          Members
+        </h3>
+        <div class="ui five items">
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/eguti.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                江口 壮哉
+              </div>
+              <div class="description">
+                機械システム分野、マイコン制御部所属。ハードウェア担当。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/otuka.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                大塚 耀
+              </div>
+              <div class="description">
+                機械システム分野、マイコン制御部所属。ハードウェア担当。対話型セラピーロボットを設計。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/oonisi.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                大西 祐輝
+              </div>
+              <div class="description">
+                電気電子分野所属。管理、経営、ハードウェア担当。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/kasai.png"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                笠井 信宏
+              </div>
+              <div class="description">
+                情報システム分野所属、Webページ、ソフトウェア担当。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/kawabata.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                川端 唯人
+              </div>
+              <div class="description">
+                機械システム分野所属。ハードウェア担当。RoboCupJunior世界大会優勝経験あり。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/kawamura.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                川村 洋平
+              </div>
+              <div class="description">
+                機械システム分野所属。ハードウェア担当。チーム副代表。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/sanada.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                眞田 行隆
+              </div>
+              <div class="description">
+                機械システム分野所属。電子回路担当。パフォーマンスロボット大会三位入賞。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/nakayama.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                中山 武壽
+              </div>
+              <div class="description">
+                機械システム分野所属。ハードウェア担当。RoboCup出場など。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/harada.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                原田 英将
+              </div>
+              <div class="description">
+                電気電子分野所属。鉄道研究同好会所属。ハード担当。チーム代表。
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image">
+              <image src="images/icons/matumoto.jpg"></image>
+            </div>
+            <div class="content">
+              <div class="header">
+                松本 賢史
+              </div>
+              <div class="description">
+                電気電子分野所属。回路、イラスト担当。
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="minititle aligined ui">
+          チーム理念
+        </h3>
+        私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。
+        <br>
+        FRCの掲げるFIRST理念は、要約すると「この大会を通じて様々なことを学んで欲しい」という意味です。
+        この大会を通じ私達は、ロボットの設計から制作、大会本番での急なトラブルへの対応、難敵との対峙、他チームとの技術交流等、様々な経験をし、その都度「学習」するでしょう。
+        当然、学ぶにはこれらの機会が必要です。そしてより学ぶためには多く、良質な機会を得る必要があり、つまり大会で勝ち上位大会へと進出する必要があります。
+        <br>
+        学ぶためには勝つ必要があるのです。
+        <br>
+        その上で、その過程で学ぶことを忘れない。
+        <br>
+        それが、私達の目標です。
+      </div>
+      <br>
+    </div>
+    <div class="ui page grid third" id="frc">
+      <div class="fourteen wide column">
+        <br>
+        <h1 class="bigtitle aligined ui">
+          First Robotics Competition とは
+        </h1>
+        <div class="ui divider"></div>
+        <h3 class="minititle aligined ui right">
+          FRCについて
+        </h3>
+        FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
+        <br>
+        現在、17か国でおよそ2700のチームが登録されていますが、残念ながら日本はその中に含まれていません。
+        主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
+        <br>
+        <a href="http://www.usfirst.org/roboticsprograms/frc">
+          FRC公式ホームページ(英語)
+        </a>
+        <h3 class="minititle aligined ui right">
+          First
+        </h3>
+        FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
+        <br>
+        この法人は、セグウェイの開発でなどで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
+        <br>
+        理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
+      </div>
+      <br>
+    </div>
+    <div class="ui page grid relaxed sponsor" id="sponsor">
+      <div class="row">
+        <div class="fourteen wide column">
+          <br>
+          <h1 class="bigtitle aligined ui">
+            Sponsors
+          </h1>
+          <div class="ui divider"></div>
+          <div class="ui grid">
+            <div class="one column row">
+              <div class="column">
+                <a href="https://www.switch-science.com/">
+                  <image class="ui big image" src="images/logo/switch-science-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.khkgears.co.jp/">
+                  <image class="ui big image" src="images/logo/KHKSTOCK-logo.jpg"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://unity3d.com/">
+                  <image class="ui big image" src="images/logo/unity-logo-kai.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.rt-shop.jp/">
+                  <image class="ui big image" src="images/logo/RT-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://usagee.co.jp/">
+                  <image class="ui big image" src="images/logo/usagee_banner.png"></image>
+                </a>
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="four column row">
+              <div class="column"></div>
+              <div class="column">
+                <image class="ui image" src="images/logo/haradahudosan-logo.png"></image>
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="five column row">
+              <div class="column"></div>
+              <div class="column"></div>
+              <div class="column">
+                <a href="http://eguco.co.jp">
+                  <image class="ui image" src="images/logo/egucologo.jpg"></image>
+                </a>
+              </div>
+              <div class="column"></div>
+            </div>
+            <a href="https://www.bonsailab.asia/">
+              <image class="ui big image" src="images/logo/bonsai-lab-logo.png"></image>
+            </a>
+          </div>
+          <div class="ui divider"></div>
+          <h3 class="minititle aligined ui">
+            スポンサー・メンター募集
+          </h3>
+          現在私達はスポンサーを募集しています。
+          <br>
+          スポンサーの広告として、HPの他にロボット・ユニフォーム・横断幕にて宣伝させて頂きます。
+          <br>
+          また、私達はメンターとして技術協力してくださる方も募集しています。
+          <br>
+          こちらは個人様でも、会社として技術協力してくださる形でも嬉しいです。
+          <br>
+          <a class="black" href="http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf">
+            資料PDF
+          </a>
+          <br>
+          詳しい応募方法は下のContactをご覧ください。
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid relaxed footer" id="info">
+      <div class="row">
+        <div class="fourteen wide column">
+          <h1>
+            Contact
+          </h1>
+          <div class="ui divider"></div>
+          <h3 class="minititle aligined ui">
+            スポンサー募集
+          </h3>
+        </div>
+        <div class="thirteen wide column">
+          協力してくださるという企業様は、お手数ですがtokyotsamurai@gmail.comに
+          <div class="ui bulleted list">
+            <div class="item">貴社名</div>
+            <div class="item">相談可能な日時</div>
+          </div>
+          を書いて送ってください。
+        </div>
+        <div class="fourteen wide column">
+          <h3 class="minititle aligined ui">
+            メンター募集
+          </h3>
+        </div>
+        <div class="thirteen wide column">
+          協力してくださる方は、お手数ですがtokyotsamurai@gmail.comに
+          <div class="ui bulleted list">
+            <div class="item">姓名</div>
+            <div class="item">どのような分野での協力をお願いできるか</div>
+            <div class="item">相談形態(メール、面会など)</div>
+          </div>
+          を書いて送ってください。
+        </div>
+      </div>
+      <div class="row">
+        <div class="one wide column"></div>
+        <div class="one wide column"></div>
+        <div class="fourteen wide column">
+          <i class="big mail icon"></i>
+          <a class="black" href="mailto:tokyo.t.samurai@gmail.com">Mail</a>
+          <i class="big github icon"></i>
+          <a class="black" href="https://github.com/tokyotechnicalsamurai">GitHub</a>
+          <i class="big twitter icon"></i>
+          <a class="black" href="https://twitter.com/tokyotsamurai">Twitter</a>
+          <i class="big facebook icon"></i>
+          <a class="black" href="https://facebook.com/tokyotechnicalsamurai">Facebook</a>
+          <i class="big rss icon"></i>
+          <a class="black" href="http://tokyotsamurai.blogspot.jp/">Blog</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one wide column"></div>
+        <div class="fourteen wide column"></div>
+        <div class="ui divider"></div>
+        <div class="twelve wide column">
+          &copy; 2014 Tokyo Technical Samurai All Rights reserved
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

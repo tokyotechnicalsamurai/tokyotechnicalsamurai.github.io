@@ -38,11 +38,10 @@
         $('#progressbar')
           .progress({
               text: {
-                active  : '現在{total}中{value}円集まっています! ',
-                 success : '{total}円集まりました!本当にありがとうございました!'
+                active  : '現在最終目標金額{total}万円中{value}万円集まっています!ご支援よろしくお願いします ',
+                success : '{total}万円集まりました!本当にありがとうございました!'
               }
-          })
-          ;
+          });
         });
     </script>
   </head>
@@ -367,7 +366,7 @@
           <h3 class="minititle aligined ui">
             現在の資金状況
           </h3>
-          <div class="ui indicating progress" data-total="20" data-value="12" id="progressbar">
+          <div class="ui progress" data-total="300" data-value="120" id="progressbar">
             <div class="bar">
               <div class="progress"></div>
             </div>

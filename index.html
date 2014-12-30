@@ -35,11 +35,12 @@
           $("html, body").animate({scrollTop:position}, speed, "swing");
           return false;
         }); 
+        $.fn.progress.settings.showActivity = false;
         $('#progressbar')
           .progress({
               text: {
                 active  : '現在最終目標金額{total}万円中{value}万円集まっています!ご支援よろしくお願いします ',
-                success : '{total}万円集まりました!本当にありがとうございました!'
+                success : '{total}万円集まりました!本当にありがとうございました!' 
               }
           });
         });

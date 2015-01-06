@@ -40,4 +40,4 @@ haml -q ~.haml ~.html
 
 The MIT License
 
-&copy; @2014-2015 Kasai Nobuhiro([sh4869](http://sh4869.net))
+&copy; 2014-2015 Kasai Nobuhiro([sh4869](http://sh4869.net))

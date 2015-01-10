@@ -4,9 +4,6 @@ body{
   font-family:"Helvetica";
 }
 
-/* menu */
-
-/* UI */
 /* Top */ 
 .ui.page.masthead.grid{
   background-color:red;
@@ -108,12 +105,11 @@ p.center{
 	vertical-align:center;
 	display:inline-block;
 }
-
-/* My setting for semantic */
 .menu{
   top:0px;
 }
 
+/* Sposor Images */
 .ui.sponsor-mini.images .image,
 .ui.sponsor-mini.images img,
 .ui.sponsor-mini.image {
@@ -133,13 +129,7 @@ p.center{
   font-size:0.9rem;
 }
 
-/* Social Media Setting */
-.fb-like-box{
-	background-color:#fff;
-}
-
 /* Youtube */
-
 .youtube{
 	position: relative;
 	padding-bottom:56.25%;
@@ -147,7 +137,6 @@ p.center{
 	height:0;
 	overflow:hidden;
 }
-
 .youtube iframe{
 	position: absolute;
 	top: 0;

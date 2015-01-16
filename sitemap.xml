@@ -5,7 +5,12 @@
 <url>
   <loc>http://tokyotechnicalsamurai.ml/</loc>
   <priority>1.0</priority>
-  <lastmod>2014-11-26T02:20:45+09:00</lastmod>
+  <lastmod>2015-01-14T14:03:34+09:00</lastmod>
+</url>
+<url>
+  <loc>http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf</loc>
+  <priority>0.8</priority>
+  <lastmod>2015-01-14T14:03:34+09:00</lastmod>
 </url>
 
 </urlset>

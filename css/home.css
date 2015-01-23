@@ -21,11 +21,11 @@ img.ui.image.huge.logo{
 
 /* News! */
 .ui.page.grid.relaxed#news{
-	background-color:red;
-	display:block;
+  background-color:red;
+  display:block;
 }
 .ui.celled.list.news.item.header{
-	padding:1em;
+  padding:1em;
 }
 
 /* Team */
@@ -89,7 +89,7 @@ a{
   text-decoration: underline;
 }
 a.black{
-	color:black;
+  color:black;
   text-decoration: underline;
 }
 a.
@@ -107,9 +107,9 @@ a.
   margin: 0 auto;
 }
 p.center{
-	text-align:right;
-	vertical-align:center;
-	display:inline-block;
+  text-align:right;
+  vertical-align:center;
+  display:inline-block;
 }
 .menu{
   top:0px;
@@ -137,16 +137,34 @@ p.center{
 
 /* Youtube */
 .youtube{
-	position: relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+  position: relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
 }
 .youtube iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* hr */
+
+hr.white{
+  border: 0;
+  height: 0;
+  width: 90%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.black{
+  border: 0;
+  height: 0;
+  width: 90%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

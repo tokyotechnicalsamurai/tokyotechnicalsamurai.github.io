@@ -345,20 +345,27 @@
             .item どのような分野での協力をお願いできるか
             .item 相談形態(メール、面会など)
           を書いて送ってください。
+      .ui.divider
       .row
         .one.wide.column
         .one.wide.column
         .fourteen.wide.column
-          %i.big.mail.icon
-          %a.black{:href => "mailto:tokyo.t.samurai@gmail.com"} Mail
-          %i.big.github.icon
-          %a.black{:href => "https://github.com/tokyotechnicalsamurai"} GitHub
-          %i.big.twitter.icon
-          %a.black{:href => "https://twitter.com/tokyotsamurai"} Twitter
-          %i.big.facebook.icon
-          %a.black{:href => "https://facebook.com/tokyotechnicalsamurai"} Facebook
-          %i.big.rss.icon
-          %a.black{:href => "http://tokyotsamurai.blogspot.jp/"} Blog
+          .ui.horizontal.list
+            .item
+              %a.black{:href => "mailto:tokyo.t.samurai@gmail.com"}
+                %i.big.mail.icon
+            .item
+              %a.black{:href => "https://github.com/tokyotechnicalsamurai"} 
+                %i.big.github.icon
+            .item  
+              %a.black{:href => "https://twitter.com/tokyotsamurai"}
+                %i.big.twitter.icon
+            .item  
+              %a.black{:href => "https://facebook.com/tokyotechnicalsamurai"} 
+                %i.big.facebook.icon
+            .item  
+              %a.black{:href => "http://tokyotsamurai.blogspot.jp/"} 
+                %i.big.rss.icon
       .row
         .one.wide.column
         .fourteen.wide.column

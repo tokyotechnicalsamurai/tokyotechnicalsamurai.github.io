@@ -84,6 +84,7 @@ h3.right{
 p.bold{
   font-style:bold;
 }
+/* a */
 a{
   color:white;
   text-decoration: underline;
@@ -92,11 +93,14 @@ a.black{
   color:black;
   text-decoration: underline;
 }
-a.
-.center{
+a.center{
   text-align:center;
   display: inline-block;
 }
+a.icon{
+  text-decoration:none;
+}
+
 .ui.items>.item{
   min-height:200px;
 }

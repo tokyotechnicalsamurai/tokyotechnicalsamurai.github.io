@@ -18,6 +18,11 @@ body{
 img.ui.image.huge.logo{
   text-align: center;
 }
+a.forEnglish{
+  text-align: right;
+  text-decoration:underline;
+  color:black;
+}
 
 /* News! */
 .ui.page.grid.relaxed#news{

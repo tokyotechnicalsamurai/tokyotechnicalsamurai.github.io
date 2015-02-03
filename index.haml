@@ -11,7 +11,7 @@
     / Site Properities
     %title Tokyo Technical Samurai
     %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "css/semantic-new.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/home.css", :rel => "stylesheet", :type => "text/css"}/
     / Icon setting
     %link{:href => "images/favicons/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
@@ -89,6 +89,12 @@
           %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
     #news.ui.page.grid.relaxed
       .fourteen.wide.column
+        %h1.minititle.aligined.ui
+          クラウドファンディングがスタートしました!
+        readyforというサイトで、クラウドファンディングがスタートいたしました!ご協力よろしくお願いします!
+        %br
+        %a.black{:href => "https://readyfor.jp/projects/TTS-5749", :target => "_blank"}
+          国際高校生ロボット大会FRCに日本からの初出場を果たしたい！（大塚　耀） - READYFOR?
         %h1.minititle.aligined.ui
           News
         .ui.celled.list.news
@@ -206,6 +212,7 @@
                 松本 賢史
               .description
                 電気電子分野所属。回路、イラスト担当。
+        %hr.white
         %h3.minititle.aligined.ui
           チーム理念
         私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。
@@ -224,17 +231,17 @@
       .fourteen.wide.column
         %br/
         %h1.bigtitle.aligined.ui
-          First Robotics Competition とは
+          First Robotics Competition 
         .ui.divider
         %h3.minititle.aligined.ui.right
-          FRCについて
+          FRCとは?
         FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
         %br/
         現在、17か国でおよそ2700のチームが登録されていますが、残念ながら日本はその中に含まれていません。
         主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
         %br/
         %a{:href => "http://www.usfirst.org/roboticsprograms/frc"}
-          FRC公式ホームページ(英語)
+          FRC公式Webサイト(英語)
         %h3.minititle.aligined.ui.right
           FIRST
         FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
@@ -278,17 +285,24 @@
                 %a{:href => "http://info.dwango.co.jp/"}
                   %image.ui.big.image{:src => "images/logo/dwango-logo.png"}
             .ui.divider
-            .four.column.row
-              .column
+            .three.column.row
               .column
                 %image.ui.image{:src => "images/logo/haradahudosan-logo.png"}
+              .column
+              .column
+                %image.ui.image{:src => "images/logo/vstone-logo.jpg"}
             .ui.divider
             .five.column.row
               .column
               .column
-              .column
                 %a{:href => "http://eguco.co.jp"}
                   %image.ui.image{:src => "images/logo/egucologo.jpg"}
+              .column
+                %a{:href => "http://www.ichigo-re.co.jp"}
+                  %image.ui.image{:src => "images/logo/ichigo-logo.jpg"}
+              .column
+                %a{:href => "http://www.hamano-products.co.jp/"}
+                  %image.ui.image{:src => "images/logo/hamano-logo.png"}
               .column
             %a{:href => "https://www.bonsailab.asia/"}
               %image.ui.big.image{:src => "images/logo/bonsai-lab-logo.png"}
@@ -341,18 +355,24 @@
           を書いて送ってください。
       .row
         .one.wide.column
-        .one.wide.column
-        .fourteen.wide.column
-          %i.big.mail.icon
-          %a.black{:href => "mailto:tokyo.t.samurai@gmail.com"} Mail
-          %i.big.github.icon
-          %a.black{:href => "https://github.com/tokyotechnicalsamurai"} GitHub
-          %i.big.twitter.icon
-          %a.black{:href => "https://twitter.com/tokyotsamurai"} Twitter
-          %i.big.facebook.icon
-          %a.black{:href => "https://facebook.com/tokyotechnicalsamurai"} Facebook
-          %i.big.rss.icon
-          %a.black{:href => "http://tokyotsamurai.blogspot.jp/"} Blog
+        .five.wide.column
+        .ten.wide.column
+          .ui.horizontal.list
+            .item
+              %a.icon{:href => "mailto:tokyo.t.samurai@gmail.com"}
+                %i.big.mail.icon
+            .item
+              %a.icon{:href => "https://github.com/tokyotechnicalsamurai"} 
+                %i.big.github.icon
+            .item  
+              %a.icon{:href => "https://twitter.com/tokyotsamurai"}
+                %i.big.twitter.icon
+            .item  
+              %a.icon{:href => "https://facebook.com/tokyotechnicalsamurai"} 
+                %i.big.facebook.icon
+            .item  
+              %a.icon{:href => "http://tokyotsamurai.blogspot.jp/"} 
+                %i.big.rss.icon
       .row
         .one.wide.column
         .fourteen.wide.column

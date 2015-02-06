@@ -318,18 +318,27 @@
           .ui.divider
           %h1.minititle.aligined.ui
             Special Thanks
-          .ui.items
-            .item
-              .content
-                .header#sp Rack 様
-            .item
-              .content
-                .header#sp 原田仁敦様
-            .item
-              .content
-                .header#sp 望月鶯様
-                .description#sp 
-                  %a{:href => "http://tokyouguisu.com"} HP
+          .ui.grid
+            .one.wide.column
+            .six.wide.column
+              .ui.items
+                .item
+                  .content
+                    .header#sp 
+                      Rack様
+                .ui.divider
+                .item
+                  .content
+                    .header#sp 
+                      望月鶯様
+                      %a#sp{:href => "http://tokyouguisu.com"} Webページ
+            .six.wide.column  
+              .ui.items
+                .item
+                  .content
+                    .header#sp 
+                      原田仁敦様
+                .ui.divider
           .ui.divider
           %h3.minititle.aligined.ui
             現在の資金状況

@@ -33,13 +33,19 @@ a.forEnglish{
   padding:1em;
 }
 
-/* Team */
+/***************
+ *    Team     *
+ ***************/
 .ui.page.grid.relaxed{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
   text-align:center;
 }
+#member.ui.items>.item{
+  min-height:200px;
+}
+
 
 /* FRC */ 
 .ui.page.grid.third{
@@ -59,6 +65,13 @@ a.forEnglish{
   line-height:1.5;
   text-align:center;
 }
+a#sp{
+ font-size:medium;
+}
+#sp.header{
+  font-size:x-large;
+}
+
 /* footer */
 .ui.page.grid.relaxed.footer{
   color:#000;
@@ -107,9 +120,6 @@ a.icon{
   text-decoration:none;
 }
 
-#member.ui.items>.item{
-  min-height:200px;
-}
 .name{
   font-size:1.5em;
 }

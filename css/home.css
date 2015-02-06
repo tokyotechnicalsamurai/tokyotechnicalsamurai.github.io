@@ -59,11 +59,6 @@ a.forEnglish{
   line-height:1.5;
   text-align:center;
 }
-#sp.header{
- font-size:x-large;
-}
-
-
 /* footer */
 .ui.page.grid.relaxed.footer{
   color:#000;
@@ -112,7 +107,7 @@ a.icon{
   text-decoration:none;
 }
 
-.ui.items>.item{
+#member.ui.items>.item{
   min-height:200px;
 }
 .name{

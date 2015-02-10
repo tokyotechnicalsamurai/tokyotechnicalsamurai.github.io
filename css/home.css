@@ -28,6 +28,7 @@ a.forEnglish{
 .ui.page.grid.relaxed#news{
   background-color:red;
   display:block;
+  color:black;
 }
 .ui.celled.list.news.item.header{
   padding:1em;

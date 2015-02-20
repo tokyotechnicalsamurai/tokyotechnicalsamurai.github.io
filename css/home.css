@@ -11,8 +11,6 @@ body{
 /* Top */ 
 .ui.page.masthead.grid{
   background-color:red;
-  /*background-image:url('../images/background.jpg');
-  background-size:cover; */
   display: block;
   margin-left: auto;
   margin-right: auto; 
@@ -25,8 +23,18 @@ a.forEnglish{
   text-decoration:underline;
   color:black;
 }
-
-
+#news{
+  margin-top:0;
+  margin-bottom: 1.5rem;
+  padding-top:5px;
+  padding-bottom:1rem;
+  background-color:blue;
+  text-align:center;
+}
+#news.ui.items>.item{
+  padding:5px 0px 0px 5px;
+  margin-top:1px;
+}
 /***************
  *    Team     *
  ***************/

@@ -13,6 +13,7 @@ body{
  ----------------*/ 
 #top.ui.page.grid{
   background-color:red;
+  background-size:cover;
   display: block;
   margin-left: auto;
   margin-right: auto; 
@@ -38,7 +39,7 @@ img.ui.image.huge.logo{
 #news.ui.list  .list > .item .header,
 #news.ui.list > .item .header{
   margin-top:0.3rem;
-  font-size:1.3rem;
+  font-size:1.1rem;
 }
 #news.ui.list > .item:last-child{
   padding-top:0.3rem;

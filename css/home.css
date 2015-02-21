@@ -4,29 +4,33 @@ body{
   font-family:"Helvetica";
 }
 
-/*******************/
-/* Content Setting */
-/*******************/
+/**********************************
+          Content Setting  
+ ***********************************/
 
-/* Top */ 
-.ui.page.masthead.grid{
+/*--------------- 
+      Top 
+ ----------------*/ 
+#top.ui.page.grid{
   background-color:red;
   display: block;
   margin-left: auto;
   margin-right: auto; 
 }
 img.ui.image.huge.logo{
+  margin-top:5px;
   text-align: center;
 }
-a.forEnglish{
-  text-align: right;
-  text-decoration:underline;
-  color:black;
-}
 
-/***************
- *    News     *
- **************/
+/*--------------
+      News     
+----------------*/
+.yellow{
+  background-color:yellow;
+}
+.red{
+  background-color:red;
+}
 #news{
   text-align:center;
   background:blue;
@@ -49,10 +53,11 @@ a.forEnglish{
   margin-top:0.3rem;
 }
 
-/***************
- *    Team     *
- ***************/
-.ui.page.grid.relaxed{
+/*-------------------
+        Team     
+ --------------------*/
+
+  .ui.page.grid.relaxed{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
@@ -71,9 +76,9 @@ a.forEnglish{
   text-align:center;
 }
 
-/*								*
- * Sponsors and Special Thanks 	*
- *  							*/
+/*-------------------------------
+   Sponsors and Special Thanks 	
+--------------------------------*/
 
 .ui.page.grid.relaxed.sponsor{
   color;#000;

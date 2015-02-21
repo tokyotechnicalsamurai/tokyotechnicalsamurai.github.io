@@ -23,18 +23,26 @@ a.forEnglish{
   text-decoration:underline;
   color:black;
 }
+
+/***************
+ *    News     *
+ **************/
 #news{
-  margin-top:0;
-  margin-bottom: 1.5rem;
-  padding-top:5px;
-  padding-bottom:1rem;
-  background-color:blue;
   text-align:center;
+  background:blue;
 }
-#news.ui.items>.item{
-  padding:5px 0px 0px 5px;
-  margin-top:1px;
+#news.ui.list  .list > .item .header,
+#news.ui.list > .item .header{
+  font-size:1.3rem;
 }
+#news.ui.list > .item:last-child{
+  padding-bottom:0.3rem;
+}
+#news.ui.list .list > .item .description,
+#news.ui.list >> .item .description{
+  margin-top:0.3rem;
+}
+
 /***************
  *    Team     *
  ***************/

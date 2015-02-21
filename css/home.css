@@ -4,11 +4,13 @@ body{
   font-family:"Helvetica";
 }
 
-/*******************/
-/* Content Setting */
-/*******************/
+/**********************************
+          Content Setting  
+ ***********************************/
 
-/* Top */ 
+/*--------------- 
+      Top 
+ ----------------*/ 
 .ui.page.masthead.grid{
   background-color:red;
   display: block;
@@ -20,9 +22,9 @@ img.ui.image.huge.logo{
   text-align: center;
 }
 
-/***************
- *    News     *
- **************/
+/*--------------
+      News     
+----------------*/
 #news{
   text-align:center;
   background:blue;
@@ -45,10 +47,11 @@ img.ui.image.huge.logo{
   margin-top:0.3rem;
 }
 
-/***************
- *    Team     *
- ***************/
-.ui.page.grid.relaxed{
+/*-------------------
+        Team     
+ --------------------*/
+
+  .ui.page.grid.relaxed{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
@@ -67,9 +70,9 @@ img.ui.image.huge.logo{
   text-align:center;
 }
 
-/*								*
- * Sponsors and Special Thanks 	*
- *  							*/
+/*-------------------------------
+   Sponsors and Special Thanks 	
+--------------------------------*/
 
 .ui.page.grid.relaxed.sponsor{
   color;#000;

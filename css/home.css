@@ -16,12 +16,8 @@ body{
   margin-right: auto; 
 }
 img.ui.image.huge.logo{
+  margin-top:5px;
   text-align: center;
-}
-a.forEnglish{
-  text-align: right;
-  text-decoration:underline;
-  color:black;
 }
 
 /***************

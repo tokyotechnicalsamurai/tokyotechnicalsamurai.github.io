@@ -46,10 +46,11 @@
       ga('create', 'UA-46319605-11', 'auto');
       ga('send', 'pageview');
       $(function(){
+        /*
         $(".top").bgswitcher({
-          images: ["images/background.jpg","images/teamlogo.png"],
+          images: ["images/background.jpg"],
         });
-        $("#skipwall").skippr();
+        */
         $('a[href^=#]').click(function(){
           var speed = 1000;
           var href= $(this).attr("href");
@@ -86,8 +87,9 @@
         %i.info.icon
         Info
     #top.ui.page.grid.top
-      .center
-        %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
+      .row
+        .center
+          %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
     #news.ui.divided.list
       .item
         .header クラウドファンディングがスタートしました!

@@ -45,10 +45,11 @@
       ga('create', 'UA-46319605-11', 'auto');
       ga('send', 'pageview');
       $(function(){
+        /*
         $(".top").bgswitcher({
-          images: ["images/background.jpg","images/teamlogo.png"],
+          images: ["images/background.jpg"],
         });
-        $("#skipwall").skippr();
+        */
         $('a[href^=#]').click(function(){
           var speed = 1000;
           var href= $(this).attr("href");
@@ -94,8 +95,10 @@
       </a>
     </div>
     <div class='ui page grid top' id='top'>
-      <div class='center'>
-        <img class='ui image big logo' src='images/teamlogo.png'>
+      <div class='row'>
+        <div class='center'>
+          <img class='ui image big logo' src='images/teamlogo.png'>
+        </div>
       </div>
     </div>
     <div class='ui divided list' id='news'>

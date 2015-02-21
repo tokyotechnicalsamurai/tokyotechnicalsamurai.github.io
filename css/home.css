@@ -11,7 +11,7 @@ body{
 /*--------------- 
       Top 
  ----------------*/ 
-.ui.page.masthead.grid{
+#top.ui.page.grid{
   background-color:red;
   display: block;
   margin-left: auto;
@@ -25,6 +25,12 @@ img.ui.image.huge.logo{
 /*--------------
       News     
 ----------------*/
+.yellow{
+  background-color:yellow;
+}
+.red{
+  background-color:red;
+}
 #news{
   text-align:center;
   background:blue;

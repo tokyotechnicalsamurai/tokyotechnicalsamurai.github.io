@@ -13,6 +13,7 @@
     %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/home.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/jquery.skippr.css", :rel => "stylesheet", :type => "text/css"}/
     / Icon setting
     %link{:href => "images/favicons/apple-touch-icon-57x57.png", :rel => "apple-touch-icon", :sizes => "57x57"}/
     %link{:href => "images/favicons/apple-touch-icon-114x114.png", :rel => "apple-touch-icon", :sizes => "114x114"}/
@@ -37,6 +38,7 @@
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:src => "javascript/semantic.js"}
     %script{:src => "javascript/rem.js"}
+    %script{:src => "javascript/jquery.skippr.js"}
     :javascript
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -46,6 +48,7 @@
       ga('send', 'pageview');
       
       $(function(){
+        $("#skipwall").skippr();
         $('a[href^=#]').click(function(){
           var speed = 1000;
           var href= $(this).attr("href");
@@ -82,25 +85,19 @@
         %i.info.icon
         Info
     #top.ui.page.masthead.grid
-      .one.wide.column
-      .fourteen.wide.column
-        %br/
-        .center
-          %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
-    #news.ui.page.grid.relaxed
-      .row
+      .row 
+        .one.wide.column
         .fourteen.wide.column
-          %h1.minititle.aligined.ui
-            クラウドファンディングがスタートしました!
-          readyforというサイトで、クラウドファンディングがスタートいたしました!ご協力よろしくお願いします!
-          %br
-          %a.black{:href => "https://readyfor.jp/projects/TTS-5749", :target => "_blank"}
-            国際高校生ロボット大会FRCに日本からの初出場を果たしたい！（大塚　耀） - READYFOR?
-      .row
-        .ten.wide.column
-        .three.wide.column
-          %a.forEnglish{:href => "en-index.html"}
-            English
+          %br/
+          .center
+            %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
+    #news.ui.divided.list
+      .item
+        .header クラウドファンディングがスタートしました!
+        .description 
+          ご協力よろしくお願いします!  
+          %a{:href => "https://readyfor.jp/projects/TTS-5749", :target => "_blank"} 
+            国際高校生ロボット大会FRCに日本からの初出場を果たしたい！ - READYFOR?
     #team.ui.page.grid.relaxed
       .fourteen.wide.column
         %br/
@@ -410,7 +407,7 @@
           #progressbar.ui.progress{"data-total" => "300", "data-value" => "160"}
             .bar
               .progress
-            .label Please
+            .label 読み込めていない可能性があります。ご了承下さい。
           %br/
           .ui.divider
           %h3.minititle.aligined.ui
@@ -477,3 +474,7 @@
         .ui.divider
         .twelve.wide.column
           \&copy; 2014 Tokyo Technical Samurai All Rights reserved
+    :javascript
+      $(document).ready(function(){
+        $("#skipwall").skippr();
+      });

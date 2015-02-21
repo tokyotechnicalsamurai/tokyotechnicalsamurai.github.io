@@ -24,14 +24,29 @@ a.forEnglish{
   color:black;
 }
 
-/* News! */
-.ui.page.grid.relaxed#news{
-  background-color:red;
-  display:block;
-  color:black;
+/***************
+ *    News     *
+ **************/
+#news{
+  text-align:center;
+  background:blue;
 }
-.ui.celled.list.news.item.header{
-  padding:1em;
+#news.ui.list  .list > .item .header,
+#news.ui.list > .item .header{
+  margin-top:0.3rem;
+  font-size:1.3rem;
+}
+#news.ui.list > .item:last-child{
+  padding-top:0.3rem;
+  padding-bottom:0.3rem;
+}
+#news.ui.list > .item:first-child{
+  padding-top:0.3rem;
+  padding-bottom:0.3rem;
+}
+#news.ui.list .list > .item .description,
+#news.ui.list >> .item .description{
+  margin-top:0.3rem;
 }
 
 /***************

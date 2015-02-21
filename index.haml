@@ -35,7 +35,7 @@
     %meta{:content => "images/favicons/browserconfig.xml", :name => "msapplication-config"}/
     
     / JavaScript
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "//code.jquery.com/jquery-1.11.0.min.js"}
     %script{:src => "javascript/semantic.js"}
     %script{:src => "javascript/rem.js"}
     %script{:src => "javascript/jquery.skippr.js"}
@@ -85,7 +85,9 @@
         %i.info.icon
         Info
     #top.ui.page.masthead.grid
-      %br/
+      #skipwall
+        .yellow 
+        .red
       .center
         %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
     #news.ui.divided.list

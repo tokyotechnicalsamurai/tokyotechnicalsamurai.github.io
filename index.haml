@@ -10,6 +10,7 @@
     %meta{:content => "First Robotics Competition 参加チーム、Tokyo Technical Samuraiの公式ホームページです。", :name => "description"}/
     / Site Properities
     %title Tokyo Technical Samurai
+    %link{:href => "http://fonts.googleapis.com/css?family=Slabo+27px", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/home.css", :rel => "stylesheet", :type => "text/css"}/
@@ -87,7 +88,7 @@
         %i.info.icon
         Info
     #top.ui.page.grid.top
-      .row
+      .row#top
         .center
           %img.ui.image.big.logo{:src => "images/teamlogo.png"}/
     #news.ui.divided.list
@@ -97,18 +98,14 @@
           ご協力よろしくお願いします!  
           %a{:href => "https://readyfor.jp/projects/TTS-5749", :target => "_blank"} 
             国際高校生ロボット大会FRCに日本からの初出場を果たしたい！ - READYFOR?
-    #team.ui.page.grid.relaxed
+    #team.ui.page.grid
+      .one.wide.column
       .fourteen.wide.column
-        %br/
-        %h1.bigtitle.aligined.ui.header
+        %h1.bigtitle
           Tokyo Technical Samurai
         .ui.divider
-        %h3.minititle.aligined.ui
-          Tokyo Technical Samuraiとは?
-        Tokyo Technical Samuraiとは、ロボット競技大会FRCに参加する日本初の高校生団体です。
-        %br/
-        高等学校の有志生徒10人で形成されたチームです。
-        %h3.minititle.aligined.ui
+        %p.caption Tokyo Technical Samuraiは、ロボット競技大会FRCに参加する日本初の高校生団体です。
+        %h2.title
           Members
         .ui.five.items#member
           .item
@@ -179,7 +176,7 @@
             .image
               %image{:src => "images/icons/harada.jpg"}
             .content
-              .header5
+              .header
                 原田 英将
               .description
                 電気電子分野所属。鉄道研究同好会所属。ハード担当。チーム代表。
@@ -192,45 +189,51 @@
               .description
                 電気電子分野所属。回路、イラスト担当。
         %hr.white
-        %h3.minititle.aligined.ui
+        %h2.title
           チーム理念
-        私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。
-        %br/
-        FRCの掲げるFIRST理念は、要約すると「この大会を通じて様々なことを学んで欲しい」という意味です。
-        この大会を通じ私達は、ロボットの設計から制作、大会本番での急なトラブルへの対応、難敵との対峙、他チームとの技術交流等、様々な経験をし、その都度「学習」するでしょう。
-        当然、学ぶにはこれらの機会が必要です。そしてより学ぶためには多く、良質な機会を得る必要があり、つまり大会で勝ち上位大会へと進出する必要があります。
-        %br/
-        学ぶためには勝つ必要があるのです。
-        %br/
-        その上で、その過程で学ぶことを忘れない。
-        %br/
-        それが、私達の目標です。
-      %br/
-    #frc.ui.page.grid.third
+        .caption
+          %p 私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。
+          %p
+            FRCの掲げるFIRST理念は、要約すると「この大会を通じて様々なことを学んで欲しい」という意味です。
+            この大会を通じ私達は、ロボットの設計から制作、大会本番での急なトラブルへの対応、難敵との対峙、他チームとの技術交流等、様々な経験をし、その都度「学習」するでしょう。
+            当然、学ぶにはこれらの機会が必要です。そしてより学ぶためには多く、良質な機会を得る必要があり、つまり大会で勝ち上位大会へと進出する必要があります。
+          %p
+            学ぶためには勝つ必要があるのです。
+          %p
+            その上で、その過程で学ぶことを忘れない。
+          %p
+            それが、私達の目標です。
+    #frc.ui.page.grid
+      .one.wide.column
       .fourteen.wide.column
         %br/
-        %h1.bigtitle.aligined.ui
+        %h1.bigtitle
           First Robotics Competition 
         .ui.divider
-        %h3.minititle.aligined.ui.right
+        %h2.title.right
           FRCとは?
-        FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
-        %br/
-        現在、17か国でおよそ2700のチームが登録されていますが、残念ながら日本はその中に含まれていません。
-        主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
-        %br/
-        %a{:href => "http://www.usfirst.org/roboticsprograms/frc"}
-          FRC公式Webサイト(英語)
-        %h3.minititle.aligined.ui.right
+        .caption
+          %p
+            FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
+          %p
+            現在、17か国でおよそ2700のチームが登録されていますが、残念ながら日本はその中に含まれていません。
+          %p
+            主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
+          %p
+            %a{:href => "http://www.usfirst.org/roboticsprograms/frc"} FRC公式Webサイト(英語)
+        %h2.title.right
           FIRST
-        FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
-        %br/
-        この法人は、セグウェイの開発などで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
-        %br/
-        理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
-        %h3.minititle.aligined.ui.right
+        .caption
+          %p
+            FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
+          %p
+            この法人は、セグウェイの開発などで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
+          %p
+            理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
+        %h2.title.right
           競技内容
-        FRC2015のテーマは「Recycle Rush」、コンテナを積み上げ、ゴミ箱の中にゴミを入れ、得点を競うゲームです。
+        .caption
+          FRC2015のテーマは「Recycle Rush」、コンテナを積み上げ、ゴミ箱の中にゴミを入れ、得点を競うゲームです。
         .youtube  
           %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315",:src => "https://www.youtube.com/embed/W6UYFKNGHJ8", :width => "560"}
       %br/
@@ -238,7 +241,7 @@
       .row
         .fourteen.wide.column
           %br/
-          %h1.bigtitle.aligined.ui
+          %h1.bigtitle
             Sponsors
           .ui.divider
           .ui.grid
@@ -299,7 +302,7 @@
             %a{:href => "https://www.bonsailab.asia/"}
               %image.ui.big.image{:src => "images/logo/bonsai-lab-logo.png"}
           .ui.divider
-          %h1.minititle.aligined.ui
+          %h2.title
             Special Thanks
           .ui.grid
             .one.wide.column
@@ -401,72 +404,60 @@
                     .header#sp
                       吉崎 恵 様
           .ui.divider
-          %h3.minititle.aligined.ui
+          %h3.title
             現在の資金状況
           #progressbar.ui.progress{"data-total" => "300", "data-value" => "160"}
             .bar
               .progress
             .label 読み込めていない可能性があります。ご了承下さい。
-          %br/
-          .ui.divider
-          %h3.minititle.aligined.ui
-            スポンサー・メンター募集
-          現在私達はスポンサーを募集しています。
-          %br/
-          スポンサーの広告として、HPの他にロボット・ユニフォーム・横断幕にて宣伝させて頂きます。
-          %br/
-          また、私達はメンターとして技術協力してくださる方も募集しています。
-          %br/
-          こちらは個人様でも、会社として技術協力してくださる形でも嬉しいです。
-          %br/
-          %a.black{:href => "http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf"}
-            資料PDF
-          %br/
-          詳しい応募方法は下のContactをご覧ください。
+          
+          -# .ui.divider
+          -#
+            %h3.minititle
+              スポンサー・メンター募集
+            .caption
+              %p 現在私達はスポンサーを募集しています。
+              %p スポンサーの広告として、HPの他にロボット・ユニフォーム・横断幕にて宣伝させて頂きます。
+              %p また、私達はメンターとして技術協力してくださる方も募集しています。
+              %p こちらは個人様でも、会社として技術協力してくださる形でも嬉しいです。
+            %br/
+            %a.black{:href => "http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf"}
+              資料PDF
+            %br/
+            詳しい応募方法は下のContactをご覧ください。
     #info.ui.page.grid.relaxed.footer
       .row
         .fourteen.wide.column
-          %h1
+          %h1.bigtitle
             Contact
           .ui.divider
-          %h3.minititle.aligined.ui
-            スポンサー募集
-        .thirteen.wide.column
-          協力してくださるという企業様は、お手数ですがtokyotsamurai@gmail.comに
-          .ui.bulleted.list
-            .item 貴社名
-            .item 相談可能な日時
-          を書いて送ってください。
-        .fourteen.wide.column
-          %h3.minititle.aligined.ui
-            メンター募集
-        .thirteen.wide.column
-          協力してくださる方は、お手数ですがtokyotsamurai@gmail.comに
-          .ui.bulleted.liste
-            .item 姓名
-            .item どのような分野での協力をお願いできるか
-            .item 相談形態(メール、面会など)
-          を書いて送ってください。
-      .row
-        .one.wide.column
-        .five.wide.column
-        .ten.wide.column
-          .ui.horizontal.list
-            .item
-              %a.icon{:href => "mailto:tokyo.t.samurai@gmail.com"}
-                %i.big.mail.icon
-            .item
-              %a.icon{:href => "https://github.com/tokyotechnicalsamurai"} 
-                %i.big.github.icon
+          %h2.title
+            Email
+          .caption
+            %h3 tokyotsamurai(@)gmail.com
+          %h2.title
+            Social Link
+          #sociallink.ui.very.relaxed.horizontal.list
             .item  
-              %a.icon{:href => "https://twitter.com/tokyotsamurai"}
-                %i.big.twitter.icon
+              %i.big.twitter.icon
+              .content
+                .header
+                  %a{:href => "https://twitter.com/tokyotsamurai"} Twitter
             .item  
-              %a.icon{:href => "https://facebook.com/tokyotechnicalsamurai"} 
-                %i.big.facebook.icon
+              %i.big.facebook.icon
+              .content
+                .header
+                  %a{:href => "https://facebook.com/tokyotechnicalsamurai"} Facebook
             .item  
-              %a.icon{:href => "http://tokyotsamurai.blogspot.jp/"} 
-                %i.big.rss.icon
+              %i.big.rss.icon
+              .content
+                .header
+                  %a{:href => "http://tokyotsamurai.blogspot.jp/"} Blog
+            .item  
+              %i.big.github.icon
+              .content
+                .header
+                  %a{:href => "https://github.com/tokyotechnicalsamurai"} GitHub
       .row
         .one.wide.column
         .fourteen.wide.column

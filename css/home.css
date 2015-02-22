@@ -1,7 +1,39 @@
+/**********************
+	Global Setting
+***********************/
+
 body{
   background:#FFF;
   margin:0px;
-  font-family:"Helvetica";
+  font-family:"Helvetica","メイリオ";
+}
+
+/*-----------------------------
+	font and text setting
+-----------------------------*/
+h1,h2,h3,h4,h5,h6{
+  font-weight:400;
+}
+.caption{
+  text-indent:1em;
+}
+p{
+  margin-bottom:0.3rem;
+}
+
+/*----------
+    Title
+ ----------*/
+
+h1.bigtitle{
+	font-weight:500;
+	font-size:2.3rem;
+}
+h2.title{
+  font-weight:500;
+}
+h3.minititle{
+  font-weight:400;
 }
 
 /**********************************
@@ -17,6 +49,7 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto; 
+  padding-top:1.5rem;
 }
 img.ui.image.huge.logo{
   margin-top:5px;
@@ -26,15 +59,9 @@ img.ui.image.huge.logo{
 /*--------------
       News     
 ----------------*/
-.yellow{
-  background-color:yellow;
-}
-.red{
-  background-color:red;
-}
 #news{
   text-align:center;
-  background:blue;
+   background:rgb(15,200,255); 
 }
 #news.ui.list  .list > .item .header,
 #news.ui.list > .item .header{
@@ -58,19 +85,26 @@ img.ui.image.huge.logo{
         Team     
  --------------------*/
 
-  .ui.page.grid.relaxed{
+.ui.page.grid{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
   text-align:center;
+  margin-top:2rem;
 }
 #member.ui.items>.item{
   min-height:200px;
 }
 
+#member.ui.items > .item .header{
+  font-weight:500;
+  font-size:1.5rem;
+}
 
-/* FRC */ 
-.ui.page.grid.third{
+/*--------------
+       FRC 
+ ---------------*/ 
+#frc.ui.page.grid{
   color:#ffffff;
   background-color:black;
   line-height:1.5;
@@ -96,35 +130,28 @@ a#sp{
 }
 #sp.header{
   font-size:x-large;
+  font-weight:500;
 }
 
-/* footer */
+/*------------
+    Contact  
+ -------------*/
 .ui.page.grid.relaxed.footer{
   color:#000;
   background-color:#c0c0c0;
   font-size:large;
 }
+#sociallink.ui.list > .item{
+  margin-left:0em;
+  padding-left:0em;
+}
+/*------------------------------*/
 
-/* tag settig */
-h1.center{
-  text-align: center;
-  font-family: "Open Sans";
-}
-
-h1.bigtitle{
-  font-family:"Source Sans Pro";
-}
-h3.minititle{
-  font-family:"Source Sans Pro";
-}
 h3.right{
   text-align:justify;
 }
 .nomargin{
   margin:0.5rem;
-}
-.ui.horizontal.divider{ 
-  margin:0;
 }
 p.bold{
   font-style:bold;
@@ -146,9 +173,6 @@ a.icon{
   text-decoration:none;
 }
 
-.name{
-  font-size:1.5em;
-}
 .ui.image{
   margin: 0 auto;
 }

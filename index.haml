@@ -408,22 +408,21 @@
             .bar
               .progress
             .label 読み込めていない可能性があります。ご了承下さい。
-          %br/
-          .ui.divider
-          %h3.minititle
-            スポンサー・メンター募集
-          現在私達はスポンサーを募集しています。
-          %br/
-          スポンサーの広告として、HPの他にロボット・ユニフォーム・横断幕にて宣伝させて頂きます。
-          %br/
-          また、私達はメンターとして技術協力してくださる方も募集しています。
-          %br/
-          こちらは個人様でも、会社として技術協力してくださる形でも嬉しいです。
-          %br/
-          %a.black{:href => "http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf"}
-            資料PDF
-          %br/
-          詳しい応募方法は下のContactをご覧ください。
+          
+          -# .ui.divider
+          -#
+            %h3.minititle
+              スポンサー・メンター募集
+            .caption
+              %p 現在私達はスポンサーを募集しています。
+              %p スポンサーの広告として、HPの他にロボット・ユニフォーム・横断幕にて宣伝させて頂きます。
+              %p また、私達はメンターとして技術協力してくださる方も募集しています。
+              %p こちらは個人様でも、会社として技術協力してくださる形でも嬉しいです。
+            %br/
+            %a.black{:href => "http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf"}
+              資料PDF
+            %br/
+            詳しい応募方法は下のContactをご覧ください。
     #info.ui.page.grid.relaxed.footer
       .row
         .fourteen.wide.column

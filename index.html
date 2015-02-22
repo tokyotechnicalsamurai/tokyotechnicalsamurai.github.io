@@ -10,6 +10,7 @@
     <meta content='First Robotics Competition 参加チーム、Tokyo Technical Samuraiの公式ホームページです。' name='description'>
     <!-- Site Properities -->
     <title>Tokyo Technical Samurai</title>
+    <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
     <link href='css/semantic.css' rel='stylesheet' type='text/css'>
     <link href='css/home.css' rel='stylesheet' type='text/css'>
@@ -34,10 +35,10 @@
     <meta content='images/favicons/mstile-144x144.png' name='msapplication-TileImage'>
     <meta content='images/favicons/browserconfig.xml' name='msapplication-config'>
     <!-- JavaScript -->
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <script src='//code.jquery.com/jquery-1.11.0.min.js'></script>
     <script src='javascript/semantic.js'></script>
     <script src='javascript/rem.js'></script>
-    <script src='javascript/jquery.skippr.js'></script>
+    <script src='javascript/jquery.bgswitcher.js'></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -45,8 +46,12 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-46319605-11', 'auto');
       ga('send', 'pageview');
-      
       $(function(){
+        /*
+        $(".top").bgswitcher({
+          images: ["images/background.jpg"],
+        });
+        */
         $('a[href^=#]').click(function(){
           var speed = 1000;
           var href= $(this).attr("href");
@@ -91,53 +96,35 @@
         Info
       </a>
     </div>
-    <div class='ui page masthead grid' id='top'>
-      <div class='one wide column'></div>
-      <div class='fourteen wide column'>
-        <br>
+    <div class='ui page grid top' id='top'>
+      <div class='row' id='top'>
         <div class='center'>
           <img class='ui image big logo' src='images/teamlogo.png'>
         </div>
       </div>
     </div>
-    <div class='ui page grid relaxed' id='news'>
-      <div class='row'>
-        <div class='fourteen wide column'>
-          <h1 class='minititle aligined ui'>
-            クラウドファンディングがスタートしました!
-          </h1>
-          readyforというサイトで、クラウドファンディングがスタートいたしました!ご協力よろしくお願いします!
-          <br>
-          <a class='black' href='https://readyfor.jp/projects/TTS-5749' target='_blank'>
-            国際高校生ロボット大会FRCに日本からの初出場を果たしたい！（大塚　耀） - READYFOR?
-          </a>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='ten wide column'></div>
-        <div class='three wide column'>
-          <a class='forEnglish' href='en-index.html'>
-            English
+    <div class='ui divided list' id='news'>
+      <div class='item'>
+        <div class='header'>クラウドファンディングがスタートしました!</div>
+        <div class='description'>
+          ご協力よろしくお願いします!
+          <a href='https://readyfor.jp/projects/TTS-5749' target='_blank'>
+            国際高校生ロボット大会FRCに日本からの初出場を果たしたい！ - READYFOR?
           </a>
         </div>
       </div>
     </div>
-    <div class='ui page grid relaxed' id='team'>
+    <div class='ui page grid' id='team'>
+      <div class='one wide column'></div>
       <div class='fourteen wide column'>
-        <br>
-        <h1 class='bigtitle aligined ui header'>
+        <h1 class='bigtitle'>
           Tokyo Technical Samurai
         </h1>
         <div class='ui divider'></div>
-        <h3 class='minititle aligined ui'>
-          Tokyo Technical Samuraiとは?
-        </h3>
-        Tokyo Technical Samuraiとは、ロボット競技大会FRCに参加する日本初の高校生団体です。
-        <br>
-        高等学校の有志生徒10人で形成されたチームです。
-        <h3 class='minititle aligined ui'>
+        <p class='caption'>Tokyo Technical Samuraiは、ロボット競技大会FRCに参加する日本初の高校生団体です。</p>
+        <h2 class='title'>
           Members
-        </h3>
+        </h2>
         <div class='ui five items' id='member'>
           <div class='item'>
             <div class='image'>
@@ -248,7 +235,7 @@
               <image src='images/icons/harada.jpg'></image>
             </div>
             <div class='content'>
-              <div class='header5'>
+              <div class='header'>
                 原田 英将
               </div>
               <div class='description'>
@@ -271,53 +258,73 @@
           </div>
         </div>
         <hr class='white'>
-        <h3 class='minititle aligined ui'>
+        <h2 class='title'>
           チーム理念
-        </h3>
-        私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。
-        <br>
-        FRCの掲げるFIRST理念は、要約すると「この大会を通じて様々なことを学んで欲しい」という意味です。
-        この大会を通じ私達は、ロボットの設計から制作、大会本番での急なトラブルへの対応、難敵との対峙、他チームとの技術交流等、様々な経験をし、その都度「学習」するでしょう。
-        当然、学ぶにはこれらの機会が必要です。そしてより学ぶためには多く、良質な機会を得る必要があり、つまり大会で勝ち上位大会へと進出する必要があります。
-        <br>
-        学ぶためには勝つ必要があるのです。
-        <br>
-        その上で、その過程で学ぶことを忘れない。
-        <br>
-        それが、私達の目標です。
+        </h2>
+        <div class='caption'>
+          <p>私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。</p>
+          <p>
+            FRCの掲げるFIRST理念は、要約すると「この大会を通じて様々なことを学んで欲しい」という意味です。
+            この大会を通じ私達は、ロボットの設計から制作、大会本番での急なトラブルへの対応、難敵との対峙、他チームとの技術交流等、様々な経験をし、その都度「学習」するでしょう。
+            当然、学ぶにはこれらの機会が必要です。そしてより学ぶためには多く、良質な機会を得る必要があり、つまり大会で勝ち上位大会へと進出する必要があります。
+          </p>
+          <p>
+            学ぶためには勝つ必要があるのです。
+          </p>
+          <p>
+            その上で、その過程で学ぶことを忘れない。
+          </p>
+          <p>
+            それが、私達の目標です。
+          </p>
+        </div>
       </div>
-      <br>
     </div>
-    <div class='ui page grid third' id='frc'>
+    <div class='ui page grid' id='frc'>
+      <div class='one wide column'></div>
       <div class='fourteen wide column'>
         <br>
-        <h1 class='bigtitle aligined ui'>
+        <h1 class='bigtitle'>
           First Robotics Competition
         </h1>
         <div class='ui divider'></div>
-        <h3 class='minititle aligined ui right'>
+        <h2 class='title right'>
           FRCとは?
-        </h3>
-        FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
-        <br>
-        現在、17か国でおよそ2700のチームが登録されていますが、残念ながら日本はその中に含まれていません。
-        主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
-        <br>
-        <a href='http://www.usfirst.org/roboticsprograms/frc'>
-          FRC公式Webサイト(英語)
-        </a>
-        <h3 class='minititle aligined ui right'>
+        </h2>
+        <div class='caption'>
+          <p>
+            FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
+          </p>
+          <p>
+            現在、17か国でおよそ2700のチームが登録されていますが、残念ながら日本はその中に含まれていません。
+          </p>
+          <p>
+            主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
+          </p>
+          <p>
+            <a href='http://www.usfirst.org/roboticsprograms/frc'>FRC公式Webサイト(英語)</a>
+          </p>
+        </div>
+        <h2 class='title right'>
           FIRST
-        </h3>
-        FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
-        <br>
-        この法人は、セグウェイの開発などで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
-        <br>
-        理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
-        <h3 class='minititle aligined ui right'>
+        </h2>
+        <div class='caption'>
+          <p>
+            FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
+          </p>
+          <p>
+            この法人は、セグウェイの開発などで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
+          </p>
+          <p>
+            理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
+          </p>
+        </div>
+        <h2 class='title right'>
           競技内容
-        </h3>
-        FRC2015のテーマは「Recycle Rush」、コンテナを積み上げ、ゴミ箱の中にゴミを入れ、得点を競うゲームです。
+        </h2>
+        <div class='caption'>
+          FRC2015のテーマは「Recycle Rush」、コンテナを積み上げ、ゴミ箱の中にゴミを入れ、得点を競うゲームです。
+        </div>
         <div class='youtube'>
           <iframe allowfullscreen='' frameborder='0' height='315' src='https://www.youtube.com/embed/W6UYFKNGHJ8' width='560'></iframe>
         </div>
@@ -328,7 +335,7 @@
       <div class='row'>
         <div class='fourteen wide column'>
           <br>
-          <h1 class='bigtitle aligined ui'>
+          <h1 class='bigtitle'>
             Sponsors
           </h1>
           <div class='ui divider'></div>
@@ -424,9 +431,9 @@
             </a>
           </div>
           <div class='ui divider'></div>
-          <h1 class='minititle aligined ui'>
+          <h2 class='title'>
             Special Thanks
-          </h1>
+          </h2>
           <div class='ui grid'>
             <div class='one wide column'></div>
             <div class='seven wide column'>
@@ -595,99 +602,66 @@
             </div>
           </div>
           <div class='ui divider'></div>
-          <h3 class='minititle aligined ui'>
+          <h3 class='title'>
             現在の資金状況
           </h3>
           <div class='ui progress' data-total='300' data-value='160' id='progressbar'>
             <div class='bar'>
               <div class='progress'></div>
             </div>
-            <div class='label'>Please</div>
+            <div class='label'>読み込めていない可能性があります。ご了承下さい。</div>
           </div>
-          <br>
-          <div class='ui divider'></div>
-          <h3 class='minititle aligined ui'>
-            スポンサー・メンター募集
-          </h3>
-          現在私達はスポンサーを募集しています。
-          <br>
-          スポンサーの広告として、HPの他にロボット・ユニフォーム・横断幕にて宣伝させて頂きます。
-          <br>
-          また、私達はメンターとして技術協力してくださる方も募集しています。
-          <br>
-          こちらは個人様でも、会社として技術協力してくださる形でも嬉しいです。
-          <br>
-          <a class='black' href='http://tokyotechnicalsamurai.ml/tokyo-technical-samurai.pdf'>
-            資料PDF
-          </a>
-          <br>
-          詳しい応募方法は下のContactをご覧ください。
         </div>
       </div>
     </div>
     <div class='ui page grid relaxed footer' id='info'>
       <div class='row'>
         <div class='fourteen wide column'>
-          <h1>
+          <h1 class='bigtitle'>
             Contact
           </h1>
           <div class='ui divider'></div>
-          <h3 class='minititle aligined ui'>
-            スポンサー募集
-          </h3>
-        </div>
-        <div class='thirteen wide column'>
-          協力してくださるという企業様は、お手数ですがtokyotsamurai@gmail.comに
-          <div class='ui bulleted list'>
-            <div class='item'>貴社名</div>
-            <div class='item'>相談可能な日時</div>
+          <h2 class='title'>
+            Email
+          </h2>
+          <div class='caption'>
+            <h3>tokyotsamurai(@)gmail.com</h3>
           </div>
-          を書いて送ってください。
-        </div>
-        <div class='fourteen wide column'>
-          <h3 class='minititle aligined ui'>
-            メンター募集
-          </h3>
-        </div>
-        <div class='thirteen wide column'>
-          協力してくださる方は、お手数ですがtokyotsamurai@gmail.comに
-          <div class='ui bulleted liste'>
-            <div class='item'>姓名</div>
-            <div class='item'>どのような分野での協力をお願いできるか</div>
-            <div class='item'>相談形態(メール、面会など)</div>
-          </div>
-          を書いて送ってください。
-        </div>
-      </div>
-      <div class='row'>
-        <div class='one wide column'></div>
-        <div class='five wide column'></div>
-        <div class='ten wide column'>
-          <div class='ui horizontal list'>
+          <h2 class='title'>
+            Social Link
+          </h2>
+          <div class='ui very relaxed horizontal list' id='sociallink'>
             <div class='item'>
-              <a class='icon' href='mailto:tokyo.t.samurai@gmail.com'>
-                <i class='big mail icon'></i>
-              </a>
+              <i class='big twitter icon'></i>
+              <div class='content'>
+                <div class='header'>
+                  <a href='https://twitter.com/tokyotsamurai'>Twitter</a>
+                </div>
+              </div>
             </div>
             <div class='item'>
-              <a class='icon' href='https://github.com/tokyotechnicalsamurai'>
-                <i class='big github icon'></i>
-              </a>
+              <i class='big facebook icon'></i>
+              <div class='content'>
+                <div class='header'>
+                  <a href='https://facebook.com/tokyotechnicalsamurai'>Facebook</a>
+                </div>
+              </div>
             </div>
             <div class='item'>
-              <a class='icon' href='https://twitter.com/tokyotsamurai'>
-                <i class='big twitter icon'></i>
-              </a>
+              <i class='big rss icon'></i>
+              <div class='content'>
+                <div class='header'>
+                  <a href='http://tokyotsamurai.blogspot.jp/'>Blog</a>
+                </div>
+              </div>
             </div>
             <div class='item'>
-              <a class='icon' href='https://facebook.com/tokyotechnicalsamurai'>
-                <i class='big facebook icon'></i>
-              </a>
-            </div>
-            <div class='item'>
-              <a class='icon' href='http://tokyotsamurai.blogspot.jp/'>
-                <i class='big rss icon'></i>
-              </a>
+              <i class='big github icon'></i>
+              <div class='content'>
+                <div class='header'>
+                  <a href='https://github.com/tokyotechnicalsamurai'>GitHub</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -701,5 +675,8 @@
         </div>
       </div>
     </div>
+    <script>
+      
+    </script>
   </body>
 </html>

@@ -1,64 +1,119 @@
+/**********************
+	Global Setting
+***********************/
+
 body{
   background:#FFF;
   margin:0px;
-  font-family:"Helvetica";
+  font-family:"Helvetica","メイリオ";
 }
 
-/*******************/
-/* Content Setting */
-/*******************/
+/*-----------------------------
+	font and text setting
+-----------------------------*/
+h1,h2,h3,h4,h5,h6{
+  font-weight:400;
+}
+.caption{
+  text-indent:1em;
+}
+p{
+  margin-bottom:0.3rem;
+}
 
-/* Top */ 
-.ui.page.masthead.grid{
+/*----------
+    Title
+ ----------*/
+
+h1.bigtitle{
+	font-weight:500;
+	font-size:2.3rem;
+}
+h2.title{
+  font-weight:500;
+}
+h3.minititle{
+  font-weight:400;
+}
+
+/**********************************
+          Content Setting  
+ ***********************************/
+
+/*--------------- 
+      Top 
+ ----------------*/ 
+#top.ui.page.grid{
   background-color:red;
+  background-size:cover;
   display: block;
   margin-left: auto;
   margin-right: auto; 
+  padding-top:1.5rem;
 }
 img.ui.image.huge.logo{
+  margin-top:5px;
   text-align: center;
 }
-a.forEnglish{
-  text-align: right;
-  text-decoration:underline;
-  color:black;
+
+/*--------------
+      News     
+----------------*/
+#news{
+  text-align:center;
+   background:rgb(15,200,255); 
+}
+#news.ui.list  .list > .item .header,
+#news.ui.list > .item .header{
+  margin-top:0.3rem;
+  font-size:1.1rem;
+}
+#news.ui.list > .item:last-child{
+  padding-top:0.3rem;
+  padding-bottom:0.3rem;
+}
+#news.ui.list > .item:first-child{
+  padding-top:0.3rem;
+  padding-bottom:0.3rem;
+}
+#news.ui.list .list > .item .description,
+#news.ui.list >> .item .description{
+  margin-top:0.3rem;
 }
 
-/* News! */
-.ui.page.grid.relaxed#news{
-  background-color:red;
-  display:block;
-  color:black;
-}
-.ui.celled.list.news.item.header{
-  padding:1em;
-}
+/*-------------------
+        Team     
+ --------------------*/
 
-/***************
- *    Team     *
- ***************/
-.ui.page.grid.relaxed{
+.ui.page.grid{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
   text-align:center;
+  margin-top:2rem;
 }
 #member.ui.items>.item{
   min-height:200px;
 }
 
+#member.ui.items > .item .header{
+  font-weight:500;
+  font-size:1.5rem;
+}
 
-/* FRC */ 
-.ui.page.grid.third{
+/*--------------
+       FRC 
+ ---------------*/ 
+#frc.ui.page.grid{
   color:#ffffff;
   background-color:black;
   line-height:1.5;
   text-align:center;
 }
 
-/*								*
- * Sponsors and Special Thanks 	*
- *  							*/
+/*-------------------------------
+   Sponsors and Special Thanks 	
+--------------------------------*/
 
 .ui.page.grid.relaxed.sponsor{
   color;#000;
@@ -75,35 +130,28 @@ a#sp{
 }
 #sp.header{
   font-size:x-large;
+  font-weight:500;
 }
 
-/* footer */
+/*------------
+    Contact  
+ -------------*/
 .ui.page.grid.relaxed.footer{
   color:#000;
   background-color:#c0c0c0;
   font-size:large;
 }
+#sociallink.ui.list > .item{
+  margin-left:0em;
+  padding-left:0em;
+}
+/*------------------------------*/
 
-/* tag settig */
-h1.center{
-  text-align: center;
-  font-family: "Open Sans";
-}
-
-h1.bigtitle{
-  font-family:"Source Sans Pro";
-}
-h3.minititle{
-  font-family:"Source Sans Pro";
-}
 h3.right{
   text-align:justify;
 }
 .nomargin{
   margin:0.5rem;
-}
-.ui.horizontal.divider{ 
-  margin:0;
 }
 p.bold{
   font-style:bold;
@@ -125,9 +173,6 @@ a.icon{
   text-decoration:none;
 }
 
-.name{
-  font-size:1.5em;
-}
 .ui.image{
   margin: 0 auto;
 }

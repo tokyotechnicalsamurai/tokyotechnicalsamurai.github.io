@@ -129,29 +129,25 @@ a#sp{
   font-weight:500;
 }
 
-/* footer */
+/*------------
+    Contact  
+ -------------*/
 .ui.page.grid.relaxed.footer{
   color:#000;
   background-color:#c0c0c0;
   font-size:large;
 }
+#sociallink.ui.list > .item{
+  margin-left:0em;
+  padding-left:0em;
+}
+/*------------------------------*/
 
-/* tag settig */
-h1.center{
-  text-align: center;
-  font-family: "Open Sans";
-}
-h3.minititle{
-  font-family:"Source Sans Pro";
-}
 h3.right{
   text-align:justify;
 }
 .nomargin{
   margin:0.5rem;
-}
-.ui.horizontal.divider{ 
-  margin:0;
 }
 p.bold{
   font-style:bold;

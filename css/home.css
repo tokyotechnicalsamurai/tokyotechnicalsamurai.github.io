@@ -96,6 +96,10 @@ img.ui.image.huge.logo{
   min-height:200px;
 }
 
+#member.ui.items > .item .header{
+  font-weight:500;
+  font-size:1.5rem;
+}
 
 /*--------------
        FRC 

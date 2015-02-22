@@ -26,15 +26,9 @@ img.ui.image.huge.logo{
 /*--------------
       News     
 ----------------*/
-.yellow{
-  background-color:yellow;
-}
-.red{
-  background-color:red;
-}
 #news{
   text-align:center;
-  background:blue;
+   background:rgb(15,200,255); 
 }
 #news.ui.list  .list > .item .header,
 #news.ui.list > .item .header{
@@ -58,7 +52,7 @@ img.ui.image.huge.logo{
         Team     
  --------------------*/
 
-  .ui.page.grid.relaxed{
+.ui.page.grid{
   color:#042B06;
   background-color:white ;
   line-height:1.5;

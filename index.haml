@@ -428,47 +428,36 @@
     #info.ui.page.grid.relaxed.footer
       .row
         .fourteen.wide.column
-          %h1
+          %h1.bigtitle
             Contact
           .ui.divider
-          %h3.minititle.aligined.ui
-            スポンサー募集
-        .thirteen.wide.column
-          協力してくださるという企業様は、お手数ですがtokyotsamurai@gmail.comに
-          .ui.bulleted.list
-            .item 貴社名
-            .item 相談可能な日時
-          を書いて送ってください。
-        .fourteen.wide.column
-          %h3.minititle.aligined.ui
-            メンター募集
-        .thirteen.wide.column
-          協力してくださる方は、お手数ですがtokyotsamurai@gmail.comに
-          .ui.bulleted.liste
-            .item 姓名
-            .item どのような分野での協力をお願いできるか
-            .item 相談形態(メール、面会など)
-          を書いて送ってください。
-      .row
-        .one.wide.column
-        .five.wide.column
-        .ten.wide.column
-          .ui.horizontal.list
-            .item
-              %a.icon{:href => "mailto:tokyo.t.samurai@gmail.com"}
-                %i.big.mail.icon
-            .item
-              %a.icon{:href => "https://github.com/tokyotechnicalsamurai"} 
-                %i.big.github.icon
+          %h2.title
+            Email
+          .caption
+            %h3 tokyotsamurai(@)gmail.com
+          %h2.title
+            Social Link
+          #sociallink.ui.very.relaxed.horizontal.list
             .item  
-              %a.icon{:href => "https://twitter.com/tokyotsamurai"}
-                %i.big.twitter.icon
+              %i.big.twitter.icon
+              .content
+                .header
+                  %a{:href => "https://twitter.com/tokyotsamurai"} Twitter
             .item  
-              %a.icon{:href => "https://facebook.com/tokyotechnicalsamurai"} 
-                %i.big.facebook.icon
+              %i.big.facebook.icon
+              .content
+                .header
+                  %a{:href => "https://facebook.com/tokyotechnicalsamurai"} Facebook
             .item  
-              %a.icon{:href => "http://tokyotsamurai.blogspot.jp/"} 
-                %i.big.rss.icon
+              %i.big.rss.icon
+              .content
+                .header
+                  %a{:href => "http://tokyotsamurai.blogspot.jp/"} Blog
+            .item  
+              %i.big.github.icon
+              .content
+                .header
+                  %a{:href => "https://github.com/tokyotechnicalsamurai"} GitHub
       .row
         .one.wide.column
         .fourteen.wide.column

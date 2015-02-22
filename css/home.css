@@ -129,6 +129,7 @@ a#sp{
 }
 #sp.header{
   font-size:x-large;
+  font-weight:500;
 }
 
 /* footer */

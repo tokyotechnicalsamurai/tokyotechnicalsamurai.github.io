@@ -15,10 +15,13 @@ h1,h2,h3,h4,h5,h6{
   font-weight:400;
 }
 .caption{
-  text-indent:1em;
+  margin-left:1em;
 }
 p{
   margin-bottom:0.3rem;
+}
+.content{
+  margin: 0 1em;
 }
 
 /*----------
@@ -236,7 +239,7 @@ p.center{
 hr.white{
   border: 0;
   height: 0;
-  width: 90%;
+  width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -244,7 +247,7 @@ hr.white{
 hr.black{
   border: 0;
   height: 0;
-  width: 90%;
+  width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

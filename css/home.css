@@ -107,7 +107,7 @@ img.ui.image.huge.logo{
 
 #frc.ui.page.grid{
   color:#ffffff;
-  background-color:black;
+  background-color:rgb(220,100,100);
   line-height:1.5;
   text-align:center;
 }
@@ -140,6 +140,29 @@ img.ui.image.huge.logo{
   line-height:1.5;
   text-align:center;
 }
+
+/* Sposor Images */
+.ui.sponsor-mini.images .image,
+.ui.sponsor-mini.images img,
+.ui.sponsor-mini.image {
+  width: 150px;
+  font-size:0.9rem;
+}
+.ui.sponsor.images .image,
+.ui.sponsor.images img,
+.ui.sponsor.image {
+  width: 200px;
+  font-size:0.9rem;
+}
+.ui.sponsor-big.images .image,
+.ui.sponsor-big.images img,
+.ui.sponsor-big.image {
+  width: 250px;
+  font-size:0.9rem;
+}
+
+/* Special Thanks */
+
 #sp.ui.items>.item{
   min-height:85px;
   text-align:center;
@@ -164,6 +187,8 @@ a#sp{
   margin-left:0em;
   padding-left:0em;
 }
+
+
 /*------------------------------*/
 
 h3.right{
@@ -204,25 +229,6 @@ p.center{
   top:0px;
 }
 
-/* Sposor Images */
-.ui.sponsor-mini.images .image,
-.ui.sponsor-mini.images img,
-.ui.sponsor-mini.image {
-  width: 150px;
-  font-size:0.9rem;
-}
-.ui.sponsor.images .image,
-.ui.sponsor.images img,
-.ui.sponsor.image {
-  width: 200px;
-  font-size:0.9rem;
-}
-.ui.sponsor-big.images .image,
-.ui.sponsor-big.images img,
-.ui.sponsor-big.image {
-  width: 250px;
-  font-size:0.9rem;
-}
 
 
 /* hr */

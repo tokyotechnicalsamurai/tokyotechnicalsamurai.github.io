@@ -112,12 +112,13 @@ img.ui.image.huge.logo{
         Team     
  --------------------*/
 
-.ui.page.grid{
+#team.ui.page.grid{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
   text-align:center;
   margin-top:2rem;
+  margin-bottom: 1em;
 }
 #member.ui.items>.item{
   min-height:200px;

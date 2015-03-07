@@ -1,6 +1,6 @@
-/**********************
-	Global Setting
-***********************/
+/*******************************
+	       Global Setting
+********************************/
 
 body{
   background:#FFF;
@@ -14,30 +14,54 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-weight:400;
 }
-.caption{
-  margin-left:1em;
-}
-p{
-  margin-bottom:0.3rem;
-}
 .content{
-  margin: 0 1em;
+  margin: 0 1rem;
+}
+
+.content p{
+  margin-bottom:0.3rem;
 }
 
 /*----------
     Title
  ----------*/
 
-h1.bigtitle{
+h1.bigtitle {
 	font-weight:500;
 	font-size:2.3rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
 }
 h2.title{
   font-weight:500;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
 }
 h3.minititle{
   font-weight:400;
 }
+
+
+/*----------
+     hr 
+-----------*/
+
+hr.white{
+  border: 0;
+  height: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.black{
+  border: 0;
+  height: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 
 /**********************************
           Content Setting  
@@ -88,12 +112,13 @@ img.ui.image.huge.logo{
         Team     
  --------------------*/
 
-.ui.page.grid{
+#team.ui.page.grid{
   color:#042B06;
   background-color:white ;
   line-height:1.5;
   text-align:center;
   margin-top:2rem;
+  margin-bottom: 1em;
 }
 #member.ui.items>.item{
   min-height:200px;
@@ -117,7 +142,7 @@ img.ui.image.huge.logo{
 
 /* Youtube */
 .youtube{
-  margin: 2rem 0; 
+  margin: 1.5rem 0; 
   position: relative;
   padding-bottom:56.25%;
   padding-top:30px;
@@ -126,22 +151,23 @@ img.ui.image.huge.logo{
 }
 .youtube iframe{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
 }
 
 
-/*-------------------------------
-   Sponsors and Special Thanks 	
---------------------------------*/
+/*------------
+   Sponsors  	
+--------------*/
 
-.ui.page.grid.relaxed.sponsor{
+#sponsor.ui.page.grid.relaxed{
   color:#000;
   background-color:white;
   line-height:1.5;
   text-align:center;
+  margin-bottom: 1.5rem;
 }
 
 /* Sposor Images */
@@ -164,14 +190,26 @@ img.ui.image.huge.logo{
   font-size:0.9rem;
 }
 
+/*-------------
+    Special
+--------------*/
+#special.ui.page.grid.relaxed{
+  color:#000;
+  background-color:rgb(88, 232, 244);
+  line-height:1.5;
+  text-align:center;
+  padding-bottom: 1.5rem;
+}
+
 /* Special Thanks */
 
 #sp.ui.items>.item{
-  min-height:85px;
+  min-height:100px;
   text-align:center;
 }
 a#sp{
  font-size:medium;
+ color: black;
 }
 #sp.header{
   font-size:x-large;
@@ -181,10 +219,13 @@ a#sp{
 /*------------
     Contact  
  -------------*/
-.ui.page.grid.relaxed.footer{
+#info.ui.page.grid.relaxed{
   color:#000;
   background-color:#c0c0c0;
   font-size:large;
+}
+#sociallink.ui.list{
+  margin-left: 1em;
 }
 #sociallink.ui.list > .item{
   margin-left:0em;
@@ -233,21 +274,3 @@ p.center{
 }
 
 
-
-/* hr */
-
-hr.white{
-  border: 0;
-  height: 0;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-hr.black{
-  border: 0;
-  height: 0;
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}

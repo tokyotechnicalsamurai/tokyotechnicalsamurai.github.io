@@ -203,17 +203,18 @@ img.ui.image.huge.logo{
 
 /* Special Thanks */
 
-#sp.ui.items>.item{
+.sp.ui.items>.item{
   min-height:100px;
   text-align:center;
 }
-a#sp{
+.sp.ui.items > .item > .content > .header {
+  font-size:x-large;
+  font-weight: 500;
+}
+
+.sp.ui.items > .item > .content > .description a {
  font-size:medium;
  color: black;
-}
-#sp.header{
-  font-size:x-large;
-  font-weight:500;
 }
 
 /*------------

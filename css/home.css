@@ -171,22 +171,10 @@ img.ui.image.huge.logo{
 }
 
 /* Sposor Images */
-.ui.sponsor-mini.images .image,
-.ui.sponsor-mini.images img,
-.ui.sponsor-mini.image {
-  width: 150px;
-  font-size:0.9rem;
-}
-.ui.sponsor.images .image,
-.ui.sponsor.images img,
-.ui.sponsor.image {
-  width: 200px;
-  font-size:0.9rem;
-}
-.ui.sponsor-big.images .image,
-.ui.sponsor-big.images img,
-.ui.sponsor-big.image {
-  width: 250px;
+.ui.sponsor-medium.images .image,
+.ui.sponsor-medium.images img,
+.ui.sponsor-medium.image {
+  width: 280px;
   font-size:0.9rem;
 }
 

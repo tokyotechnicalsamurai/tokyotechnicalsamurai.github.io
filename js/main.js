@@ -66,7 +66,7 @@ var profiledata = [
     },
     {
         name: '福田 怜和',
-        img : 'fukuda.png',
+        img : 'fukuda.jpg',
         exptext : '電気回路担当'
     }
 ];

@@ -1,0 +1,123 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#title {
+    margin-top: 10%;
+    position: absolute;
+}
+
+#title_space {
+    min-height: 50px;
+}
+
+#home {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#team_description {
+    min-height: 200px;
+}
+
+body {
+    padding-top: 19px;
+    background: #aaaaaa;
+    background: url('../image/back.jpg') center center / cover no-repeat fixed;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url('../image/back_sp.jpg');
+    }
+}
+
+.blur {
+    background: rgba(256, 256, 256, .6);
+}
+
+.radius {
+    border-radius: 5px;
+    /* CSS3 */
+    -webkit-border-radius: 5px;
+    /* Safari,Google Chrome用 */
+    
+    -moz-border-radius: 5px;
+    /* Firefox用 */
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-brand {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+/* columns of same height styles */
+
+.row-full-height {
+    height: 100%;
+}
+
+.col-full-height {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.row-same-height {
+    display: table;
+    width: 100%;
+    /* fix overflow */
+    
+    table-layout: fixed;
+}
+
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+
+@media (min-width: 768px) {
+    .col-sm-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-height {
+        display: table-cell;
+        float: none !important;
+    }
+}
+/* vertical alignment styles */
+
+.col-top {
+    vertical-align: top;
+}
+
+.col-middle {
+    vertical-align: middle;
+}
+
+.col-bottom {
+    vertical-align: bottom;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tokyo Technical Samurai</title>
+
+    <link rel="stylesheet" href="css/timelinr.css" type="text/css" media="screen">
+    <!-- Bootstrap -->
+    <link href="css/theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts/font.default.css?v1">
+    <link href="css/user.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="navbar-brand">Tokyo Technical Samurai</span>
+                    <!-- 画面サイズが小さい時に表示されるボタン -->
+                    <!-- data-targetにollapseを指定したdivのidを指定すること -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbutton">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- idは、上記ボタンのdata-targetに指定したものと揃えること -->
+                <div class="collapse navbar-collapse" id="navbutton">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><strong>Home</strong></a>
+                        </li>
+                        <li><a href="#team"><strong>Team</strong></a>
+                        </li>
+                        <li><a href="#frc"><strong>FRC</strong></a>
+                        </li>
+                        <li><a href="#sponsor"><strong>Sponsor</strong></a>
+                        </li>
+                        <!--
+                        <li><a href="#schedule"><strong>Schedule</strong></a>
+                        </li>-->
+                        <li><a href="#contact"><strong>Contact</strong></a>
+                        </li>
+                        <li><a href="./2015/"><strong>昨年度</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+    </nav>
+    <!--トップページ-->
+    <div id="home">
+        <div id="title_space"></div>
+        <div class="container blur radius">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <img src="./teamlogo.png" alt="Tokyo Technical Samurai" class="img-responsive img-rounded radius">
+                </div>
+                <div class="col-xs-12 col-sm-8 center-block" id=team_description>
+                    <div class="visible-xs visible-sm">
+                        <h1>Tokyo Technical Samurai</h1>
+                        <p class="lead">
+                            私達はFirst Robotics Competitionに参加する日本の高校生の団体です
+                        </p>
+                    </div>
+                    <div id="title" class="visible-md visible-lg">
+                        <h1>Tokyo Technical Samurai</h1>
+                        <p class="lead">
+                            私達はFirst Robotics Competitionに参加する日本の高校生の団体です
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--News-->
+    <div id="news" class="container">
+        <div class="container blur col-sm-10 col-sm-offset-1 radius">
+            <h2><span class="glyphicon glyphicon-star"></span>News</h2>
+            <p class="lead">
+                2015.07.01 Tokyo Technical Samurai 活動開始
+            </p>
+        </div>
+    </div>
+    <br>
+    <!--Team-->
+    <div id="team" class="container">
+        <div class="container blur col-sm-10 col-sm-offset-1 radius">
+            <h2><span class="glyphicon glyphicon-user"></span>Team</h2>
+            <div class="row" id="profile">
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--FRC-->
+    <div id="frc" class="container">
+        <div class="container blur col-sm-10 col-sm-offset-1 radius">
+            <h2><span class="glyphicon glyphicon-road "></span> FRC</h2>
+            <h3>FRCとは?</h3>
+            <p class="lead ">
+                FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
+            </p>
+            <p>
+                2015年の大会では19か国、2908のチームが登録され、そのうち日本として初めて２チームが参加しました。
+                <br> 主な概要としては、学校の支援無しでスポンサー集めや作業場所の確保を高校生が主体となって行い、そして1月から2月にかけて120ポンド≒54㎏のロボットを、６週間という期間で製作し、3月末に行われる競技会に参加します。
+                <br> また、このFRCでは、技術を既に持っている人だけではなく、学ぶ意欲を新しい技術を習得、活用できる場となっています。例えば、最近ではCADを使った3Dモデリングを行い、実際に3Dプリンターを利用して制作することも主流になってきています。
+            </p>
+            <h3>FIRSTとは</h3>
+            <p class="lead">
+                FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
+            </p>
+            <p>
+                この法人はセグウェイの開発などで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
+                <br>
+                <br> 理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
+            </p>
+            <h3>私達 Tokyo Technicak Samurai について</h3>
+            <p class="lead">
+                私たちは昨年日本から初めてFRCへの参加を果たした日本チームの１つTokyo Technical Samuraiの後継チームです。
+            </p>
+            <h4>Team Idea</h4>
+            <p>
+                教育、育成、習得、発展。 FRCを主催する団体『FIRST』の理念に出てくる言葉です。<br>
+                これらは、FRCが単にロボットを造るだけの大会ではないということを示しています。FRCを通して私たちが得られるものは、実際に造る1台のロボットだけではありません。<br>
+                この大会は、私たち高校生にとって きわめて重要な学びと成長の機会なのです。<br>
+                ロボットの制作過程はもちろん、そこに至るまでやその先の大会当日まで、私たちは様々な人と色々な形で出会い、ふれあい、高校生として実に稀有な体験をするでしょう。<br>
+                多くの人との出会い・ふれあいは、まさにこれからの社会で必要とされることです。<br>
+                しかしながら、その機会を提供してくれるFRCは、日本ではあまり知られていません。稀有な、と書きましたが、それが稀有な体験であってはならない。<br>
+                私たちチームの目標は、FRCへの参加を通して学びを得ること。 そして、大会において優れた成績を残す…すなわち勝利を目指すことで、この素晴らしい大会を日本に広く伝えることです。<br>
+                それが日本の、ひいては世界の科学技術の発展につながると信じて。
+            </p>
+        </div>
+    </div>
+    <br>
+    <!--Sponsor-->
+    <div id="sponsor" class="container">
+        <div class="container blur col-sm-10 col-sm-offset-1 radius">
+            <h2><span class="glyphicon glyphicon-user "></span> Sponsor</h2>
+            <p class="lead">
+                スポンサー
+            </p>
+        </div>
+    </div>
+    <br>
+    
+    <!--Schedule-->
+    <!--
+    <div id="schedule" class="container">
+        <div class="container blur col-sm-10 col-sm-offset-1 radius">
+            <h2><span class="glyphicon glyphicon-calendar "></span> Schedule</h2>
+            <div id="timeline">
+                <ul id="dates">
+                </ul>
+                <ul id="issues">
+                </ul>
+                <a href="" id="next">+</a>
+                <a href="" id="prev">-</a>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    -->
+    <!--Contact-->
+    <div id="contact" class="container">
+        <div class="container blur col-sm-10 col-sm-offset-1 radius">
+            <h2><span class="glyphicon glyphicon-tags "></span> Contact</h2>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <a class="twitter-timeline" href="https://twitter.com/tokyotsamurai" data-widget-id="597723486337966080">@tokyotsamuraiさんのツイート</a>
+                    <script>
+                        ! function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");
+                    </script>
+                </div>
+
+                <div class="col-xs-12 col-sm-6">
+                    <p>Facebook</p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <p>Mail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
+    <script src="js/jsrender.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.timelinr-0.9.54.js "></script>
+    <script id="profileTemp" type="text/x-jsrender">
+        <div class="col-xs-12 col-sm-6">
+            <div class="thumbnail radius">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-3">
+                        <img src="image/profile/{{:img}}" alt="... " class="img-responsive img-rounded radius">
+                    </div>
+                    <div class="col-xs-6 col-sm-9">
+                        <h4>{{:name}}</h4>
+                        <p>
+                            {{:exptext}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="timelineHeadTemp" type="text/x-jsrender">
+        <li><a href="">{{:date}}</a>
+    </script>
+    <script id="timelineissuesTemp" type="text/x-jsrender">
+        <li>
+            <h3>{{:title}}</h3>
+            <p class="lead ">{{:text}}</p>
+        </li>
+    </script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@ var profiledata = [
     },
     {
         name: '長谷川 朝',
-        img : 'none.jpg',
+        img : 'hasegawa.png',
         exptext : 'チーム副代表'
     },
     {

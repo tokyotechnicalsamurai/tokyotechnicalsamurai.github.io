@@ -21,7 +21,7 @@ var profiledata = [
     },
     {
         name: '武田 聖志',
-        img : 'none.jpg',
+        img : 'takeda.jpg',
         exptext : 'ハード担当'
     },
     {
@@ -51,7 +51,7 @@ var profiledata = [
     },
     {
         name: '鳥見 晃平',
-        img : 'none.jpg',
+        img : 'torimi.jpg',
         exptext : '電気回路担当'
     },
     {

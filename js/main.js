@@ -56,7 +56,7 @@ var profiledata = [
     },
     {
         name: '宮本 哲晟',
-        img : 'none.jpg',
+        img : 'miyamoto.jpg',
         exptext : 'ハード担当'
     },
     {

@@ -10,33 +10,13 @@ var profiledata = [
         exptext : 'チーム副代表'
     },
     {
-        name: '橋本 直希',
-        img : 'none.jpg',
-        exptext : 'ソフトウェア担当'
-    },
-    {
-        name: '中野 紗良',
-        img : 'none.jpg',
-        exptext : 'ハード担当'
-    },
-    {
-        name: '武田 聖志',
-        img : 'takeda.jpg',
-        exptext : 'ハード担当'
-    },
-    {
         name: '大柴 宗太郎',
         img : 'none.jpg',
         exptext : 'ハード担当'
     },
     {
-        name: '宮本 哲晟',
-        img : 'none.jpg',
-        exptext : 'ハード担当'
-    },
-    {
-        name: '杉崎 喜一',
-        img : 'sugizaki.png',
+        name: '尾嶋 雄貴',
+        img : 'ojima.jpg',
         exptext : 'ハード担当'
     },
     {
@@ -45,9 +25,14 @@ var profiledata = [
         exptext : 'ソフトウェア担当'
     },
     {
-        name: '山口 俊太郎',
-        img : 'none.jpg',
-        exptext : 'ソフトウェア担当'
+        name: '杉崎 喜一',
+        img : 'sugizaki.png',
+        exptext : 'ハード担当'
+    },
+    {
+        name: '武田 聖志',
+        img : 'takeda.jpg',
+        exptext : 'ハード担当'
     },
     {
         name: '鳥見 晃平',
@@ -55,12 +40,12 @@ var profiledata = [
         exptext : '電気回路担当'
     },
     {
-        name: '尾嶋 雄貴',
+        name: '中野 紗良',
         img : 'none.jpg',
         exptext : 'ハード担当'
     },
     {
-        name: '吉田 拓人',
+        name: '橋本 直希',
         img : 'none.jpg',
         exptext : 'ソフトウェア担当'
     },
@@ -68,7 +53,22 @@ var profiledata = [
         name: '福田 怜和',
         img : 'fukuda.jpg',
         exptext : '電気回路担当'
-    }
+    },
+    {
+        name: '宮本 哲晟',
+        img : 'none.jpg',
+        exptext : 'ハード担当'
+    },
+    {
+        name: '山口 俊太郎',
+        img : 'none.jpg',
+        exptext : 'ソフトウェア担当'
+    },
+    {
+        name: '吉田 拓人',
+        img : 'none.jpg',
+        exptext : 'ソフトウェア担当'
+    },
 ];
 
 var timelinedata = [

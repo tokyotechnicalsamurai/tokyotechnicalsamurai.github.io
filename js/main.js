@@ -11,7 +11,7 @@ var profiledata = [
     },
     {
         name: '大柴 宗太郎',
-        img : 'none.jpg',
+        img : 'ooshiba.jpg',
         exptext : 'ハード担当'
     },
     {

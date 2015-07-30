@@ -81,10 +81,11 @@ var timelinedata = [
 $(function () {
     var html = $('#profileTemp').render(profiledata);
     $('#profile').append(html);
+    /*
     var html = $('#timelineHeadTemp').render(timelinedata);
     $('#dates').append(html);
     var html = $('#timelineissuesTemp').render(timelinedata);
-    $('#issues').append(html);
+    $('#issues').append(html);*/
     $('a[href^=#]').click(function () {
         var speed = 500; //移動完了までの時間(sec)を指定
         var href = $(this).attr("href");
@@ -96,7 +97,8 @@ $(function () {
         $('#navbutton').collapse('hide');
         return false;
     });
+    /*
     $().timelinr({
             arrowKeys: 'true'
-    });
+    });*/
 });

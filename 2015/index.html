@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <meta content="FRC,Tokyo Technical Samurai," name="keywords">
+    <meta content="Kasai Nobuhiro,sh4869(sh4869.net)" name="author">
+    <meta content="First Robotics Competition 参加チーム、Tokyo Technical Samuraiの公式ホームページです。" name="description">
+    <!-- Site Properities -->
+    <title>Tokyo Technical Samurai</title>
+    <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700" rel="stylesheet" type="text/css">
+    <link href="css/semantic.css" rel="stylesheet" type="text/css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <!-- Icon setting -->
+    <link href="images/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="images/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/favicons/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="images/favicons/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="images/favicons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="images/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="images/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="images/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="images/favicons/favicon.ico" rel="shortcut icon">
+    <link href="images/favicons/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="images/favicons/favicon-160x160.png" rel="icon" sizes="160x160" type="image/png">
+    <link href="images/favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <meta content="#00a300" name="msapplication-TileColor">
+    <meta content="images/favicons/mstile-144x144.png" name="msapplication-TileImage">
+    <meta content="images/favicons/browserconfig.xml" name="msapplication-config">
+    <!-- JavaScript -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascript/semantic.js"></script>
+    <script src="javascript/rem.js"></script>
+    <script src="javascript/jquery.bgswitcher.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46319605-11', 'auto');
+      ga('send', 'pageview');
+      $(function(){
+        /*
+        $(".top").bgswitcher({
+          images: ["images/background.jpg"],
+        });
+        */
+        $('a[href^=#]').click(function(){
+          var speed = 1000;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
+          return false;
+        }); 
+        $.fn.progress.settings.showActivity = false;
+        $('#progressbar').progress({
+          text: {
+            active  : '現在最終目標金額{total}万円中{value}万円集まっています!ご支援よろしくお願いします ',
+            success : '{total}万円集まりました!本当にありがとうございました!' 
+          }
+        });
+      });
+    </script>
+    <!--[if lte IE 8]>
+      <script src="javascript/alert.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="ui fluid five item inverted small fixed menu">
+      <a class="item" href="#top">
+        <i class="up arrow icon"></i>
+        Top
+      </a>
+      <a class="item" href="#team">
+        <i class="users icon"></i>
+        Team
+      </a>
+      <a class="item" href="#frc">
+        <i class="trophy icon"></i>
+        FRC
+      </a>
+      <a class="item" href="#sponsor">
+        <i class="building icon"></i>
+        Sponsors
+      </a>
+      <a class="item" href="#info">
+        <i class="info icon"></i>
+        Info
+      </a>
+    </div>
+    <div class="ui page grid top" id="top">
+      <div class="row" id="top">
+        <div class="center">
+          <img class="ui image big logo" src="images/teamlogo.png">
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid" id="team">
+      <div class="row">
+        <div class="sixteen wide column">
+          <h1 class="bigtitle">
+            Tokyo Technical Samurai
+          </h1>
+          <hr class="white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourteen wide column">
+          <h2 class="title">What is Tokyo Technical Samurai?</h2>
+          <div class="content">
+            <p class="caption">Tokyo Technical Samuraiは、ロボット競技大会FRCに参加する日本初の高校生団体です。</p>
+          </div>
+          <h2 class="title">
+            Members
+          </h2>
+          <div class="content">
+            <div class="ui five items" id="member">
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/eguti.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    江口 壮哉
+                  </div>
+                  <div class="description">
+                    機械システム分野、マイコン制御部所属。ハードウェア担当。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/otuka.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    大塚 耀
+                  </div>
+                  <div class="description">
+                    機械システム分野、マイコン制御部所属。ハードウェア担当。対話型セラピーロボットを設計。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/oonisi.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    大西 祐輝
+                  </div>
+                  <div class="description">
+                    電気電子分野所属。管理、経営、ハードウェア担当。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/kasai.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    笠井 信宏
+                  </div>
+                  <div class="description">
+                    情報システム分野所属、Webページ、ソフトウェア担当。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/kawabata.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    川端 唯人
+                  </div>
+                  <div class="description">
+                    機械システム分野所属。ハードウェア担当。RoboCupJunior世界大会優勝経験あり。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/kawamura.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    川村 洋平
+                  </div>
+                  <div class="description">
+                    機械システム分野所属。ハードウェア担当。チーム副代表。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/sanada.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    眞田 行隆
+                  </div>
+                  <div class="description">
+                    機械システム分野所属。電子回路担当。パフォーマンスロボット大会三位入賞。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/nakayama.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    中山 武壽
+                  </div>
+                  <div class="description">
+                    機械システム分野所属。ハードウェア担当。RoboCup出場など。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/harada.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    原田 英将
+                  </div>
+                  <div class="description">
+                    電気電子分野所属。鉄道研究同好会所属。ハード担当。チーム代表。
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <image src="images/icons/matumoto.jpg"></image>
+                </div>
+                <div class="content">
+                  <div class="header">
+                    松本 賢史
+                  </div>
+                  <div class="description">
+                    電気電子分野所属。回路、イラスト担当。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title">
+            Team Idea
+          </h2>
+          <div class="content">
+            <p>
+              私達は「勝利を目指し、その過程で学ぶことを忘れない」事を目標に掲げて活動しています。
+            </p>
+            <p>
+              FRCの掲げるFIRST理念は、要約すると「この大会を通じて様々なことを学んで欲しい」という意味です。
+            </p>
+            <p>
+              この大会を通じ私達は、ロボットの設計から制作、大会本番での急なトラブルへの対応、難敵との対峙、他チームとの技術交流等、様々な経験をし、その都度「学習」するでしょう。
+            </p>
+            <p>
+              当然、学ぶにはこれらの機会が必要です。そしてより学ぶためには多く、良質な機会を得る必要があり、つまり大会で勝ち上位大会へと進出する必要があります。
+            </p>
+            <p>
+              学ぶためには勝つ必要があるのです。
+            </p>
+            <p>
+              その上で、その過程で学ぶことを忘れない。
+            </p>
+            <p>
+              それが、私達の目標です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid" id="frc">
+      <div class="row">
+        <div class="sixteen wide column">
+          <h1 class="bigtitle">
+            First Robotics Competition
+          </h1>
+          <hr class="white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourteen wide column">
+          <h2 class="title right">
+            FRCとは?
+          </h2>
+          <div class="content">
+            <p>
+              FRC、正式名称”FIRST Robotics Competition”は、NPO法人FIRSTが主催する、高校生のための世界規模のロボット競技会です。
+            </p>
+            <p>
+              昨年度は、17か国でおよそ2700のチームが登録されていましたが、残念ながら日本はその中に含まれていませんでした。
+            </p>
+            <p>
+              主な概要としては、120ポンド≒54㎏のロボットを、高校生が主体となって６週間という期間で製作し、3月末に行われる競技会に参加します。
+            </p>
+            <p>
+              <a href="http://www.usfirst.org/roboticsprograms/frc">FRC公式Webサイト(英語)</a>
+            </p>
+          </div>
+          <h2 class="title right">
+            FIRST
+          </h2>
+          <div class="content">
+            <p>
+              FIRSTとは、米国のNPO法人”For Inspiration and Recognition of Science and Technology”、日本国名「青少年科学技術振興会」の略称です。
+            </p>
+            <p>
+              この法人は、セグウェイの開発などで有名な米国の発明家、ディーン・ケーメン氏によって1992年に設立され、以来NASAなどの支援を受けて学生のためのロボット競技会を開催しています。
+            </p>
+            <p>
+              理念は、「若い世代に対して科学技術の教育を行って将来の技術者のリーダーとなれる人材を育成し、また技術力、コミュニケーション能力を習得させ、世界の科学技術を発展させること」と明言されています。
+            </p>
+          </div>
+          <h2 class="title right">
+            競技内容
+          </h2>
+          <div class="content">
+            <p>
+              FRC2015のテーマは「Recycle Rush」、コンテナを積み上げ、ゴミ箱の中にゴミを入れ、得点を競うゲームです。
+            </p>
+          </div>
+          <div class="youtube">
+            <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/W6UYFKNGHJ8" width="560"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid relaxed" id="sponsor">
+      <div class="row">
+        <div class="sixteen wide column">
+          <h1 class="bigtitle">
+            Sponsors
+          </h1>
+          <hr class="white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourteen wide column">
+          <div class="ui grid">
+            <div class="one column row">
+              <div class="column">
+                <a href="http://www.nttdata.com/jp/ja/">
+                  <image class="ui hassive image" src="images/logo/ntt-data-logo.jpg"></image>
+                </a>
+              </div>
+              <div class="ui divider"></div>
+              <div class="column">
+                <a href="https://www.switch-science.com/">
+                  <image class="ui big image" src="images/logo/switch-science-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.khkgears.co.jp/">
+                  <image class="ui big image" src="images/logo/KHKSTOCK-logo.jpg"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://unity3d.com/">
+                  <image class="ui big image" src="images/logo/unity-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.rt-shop.jp/">
+                  <image class="ui big image" src="images/logo/RT-logo.png"></image>
+                </a>
+                <br>
+              </div>
+              <div class="column">
+                <a href="http://usagee.co.jp/">
+                  <image class="ui big image" src="images/logo/usagee_banner.png"></image>
+                </a>
+                <br>
+              </div>
+              <div class="column">
+                <a href="http://info.dwango.co.jp/">
+                  <image class="ui big image" src="images/logo/dwango-logo.jpg"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.huistenbosch.co.jp">
+                  <image class="ui big image" src="images/logo/huis-ten-bosch-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.oki.com/jp">
+                  <image class="ui big image" src="images/logo/oki-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.digiplannet.com/">
+                  <image class="ui big image" src="images/logo/DP_Logo.png"></image>
+                </a>
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="two column row">
+              <div class="column">
+                <image class="ui sponsor-medium image" src="images/logo/haradahudosan-logo.png"></image>
+              </div>
+              <div class="column">
+                <a href="https://www.facebook.com/waorobo">
+                  <image class="ui sponsor-medium image" src="images/logo/WAO-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.vstone.co.jp/">
+                  <image class="ui sponsor-medium image" src="images/logo/vstone-logo.jpg"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.autodesk.co.jp/">
+                  <image class="ui sponsor-medium image" src="images/logo/autodesk-logo.png"></image>
+                </a>
+              </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="four column row">
+              <div class="column">
+                <a href="http://eguco.co.jp">
+                  <image class="ui image" src="images/logo/egucologo.jpg"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.ichigo-re.co.jp">
+                  <image class="ui image" src="images/logo/ichigo-logo.jpg"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://www.hamano-products.co.jp/">
+                  <image class="ui image" src="images/logo/hamano-logo.png"></image>
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://k-yama-is.net/">
+                  <image class="ui image" src="images/logo/kamakurayama-is-logo.png"></image>
+                </a>
+              </div>
+            </div>
+            <a href="https://www.bonsailab.asia/">
+              <image class="ui big image" src="images/logo/bonsai-lab-logo.png"></image>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid relaxed" id="special">
+      <div class="row">
+        <div class="sixteen wide column">
+          <h1 class="bigtitle">
+            Special
+          </h1>
+          <hr class="white">
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourteen wide column">
+          <h2 class="title">
+            Special Thanks
+          </h2>
+          <div class="ui grid">
+            <div class="eight wide column">
+              <div class="ui items sp">
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      Rack 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      望月鶯 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="http://tokyouguisu.com">Webページ</a>
+                      <a class="sp" href="https://twitter.com/Uguis_MZU">Twitter</a>
+                      <a class="sp" href="https://www.facebook.com/mochizuki.uguisu">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      有田富和 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://www.facebook.com/tomikazu.arita">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      あれくしゃー 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://twitter.com/Aleksherr">Twitter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      試作先行量産型水中専用猫面＠寒冷地戦闘仕様（遺伝子組み換えでない） 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://twitter.com/fsm_jp">Twitter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      青木　龍大 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      ミツマチヨシコ 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      山下大貴 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      清水力 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      そでのした 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      吉田葉子 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://www.facebook.com/yoko.yoshida.94">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      Masakatsu Kosuga 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://www.facebook.com/kosuga.masakatsu">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      平岡直己 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      岡桃子 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      白田 恭平 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      平田善章 様
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="eight wide column">
+              <div class="ui items sp">
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      原田仁敦 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      藤川友子 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      大槻俊和 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      村岡公司 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      menmanist 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      高橋智博 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      松井栞里 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      吉崎 恵 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      アシリベツガワ製作所 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      玉置 昌義 (TAMAKI記念研究所) 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      とまと 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://twitter.com/tomitomitomi7">Twitter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      chiduko kawabata 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      原口正明 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      ぎんた 様
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      Attun 様
+                    </div>
+                    <div class="description">
+                      <a class="sp" href="https://twitter.com/nezuku">Twitter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ui divider"></div>
+                <div class="item">
+                  <div class="content">
+                    <div class="header sp">
+                      熊野栞 様
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="title">
+            Articles
+          </h2>
+          <div class="ui grid">
+            <div class="two column row">
+              <div class="column">
+                <a href="http://engineer.typemag.jp/article/frc" target="_blank">
+                  <img class="ui big image" src="images/logo/Engineer-type-logo.png">
+                </a>
+              </div>
+              <div class="column">
+                <a href="http://deviceplus.jp/people/tts_01/" target="_blank">
+                  <img class="ui big image" src="images/logo/Rohm_Deviceplus_logo.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid relaxed" id="info">
+      <div class="row">
+        <div class="sixteen wide column">
+          <h1 class="bigtitle">
+            Contact
+          </h1>
+          <hr class="black">
+        </div>
+      </div>
+      <div class="row">
+        <div class="one wide column"></div>
+        <div class="fourteen wide column">
+          <h2 class="title">
+            Email
+          </h2>
+          <div class="content">
+            <h3>tokyotsamurai☆ gmail.com (☆ → @)</h3>
+          </div>
+          <h2 class="title">
+            Social Link
+          </h2>
+          <div class="content">
+            <div class="ui very relaxed horizontal list" id="sociallink">
+              <div class="item">
+                <i class="big twitter icon"></i>
+                <div class="content">
+                  <div class="header">
+                    <a href="https://twitter.com/tokyotsamurai">Twitter</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="big facebook icon"></i>
+                <div class="content">
+                  <div class="header">
+                    <a href="https://facebook.com/tokyotechnicalsamurai">Facebook</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="big rss icon"></i>
+                <div class="content">
+                  <div class="header">
+                    <a href="http://tokyotsamurai.blogspot.jp/">Blog</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="big github icon"></i>
+                <div class="content">
+                  <div class="header">
+                    <a href="https://github.com/tokyotechnicalsamurai">GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one wide column"></div>
+        <div class="fourteen wide column"></div>
+        <div class="ui divider"></div>
+        <div class="twelve wide column">
+          &copy; 2014 Tokyo Technical Samurai All Rights reserved
+        </div>
+      </div>
+    </div>
+    <script>
+      
+    </script>
+  </body>
+</html>

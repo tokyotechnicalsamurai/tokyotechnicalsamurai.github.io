@@ -9,7 +9,7 @@
     %meta{:content => "Kasai Nobuhiro,sh4869(sh4869.net)", :name => "author"}/
     %meta{:content => "First Robotics Competition 参加チーム、Tokyo Technical Samuraiの公式ホームページです。", :name => "description"}/
     / Site Properities
-    %title Tokyo Technical Samurai
+    %title Tokyo Technical Samurai 2015
     %link{:href => "http://fonts.googleapis.com/css?family=Slabo+27px", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "css/semantic.css", :rel => "stylesheet", :type => "text/css"}/
@@ -47,11 +47,6 @@
       ga('create', 'UA-46319605-11', 'auto');
       ga('send', 'pageview');
       $(function(){
-        /*
-        $(".top").bgswitcher({
-          images: ["images/background.jpg"],
-        });
-        */
         $('a[href^=#]').click(function(){
           var speed = 1000;
           var href= $(this).attr("href");
@@ -60,13 +55,6 @@
           $("html, body").animate({scrollTop:position}, speed, "swing");
           return false;
         }); 
-        $.fn.progress.settings.showActivity = false;
-        $('#progressbar').progress({
-          text: {
-            active  : '現在最終目標金額{total}万円中{value}万円集まっています!ご支援よろしくお願いします ',
-            success : '{total}万円集まりました!本当にありがとうございました!' 
-          }
-        });
       });
     /[if lte IE 8]
       %script{:src => "javascript/alert.js"}
@@ -553,5 +541,4 @@
         .fourteen.wide.column
         .ui.divider
         .twelve.wide.column
-          \&copy; 2014 Tokyo Technical Samurai All Rights reserved
-    :javascript
+          \&copy; 2014-2015 Tokyo Technical Samurai All Rights reserved

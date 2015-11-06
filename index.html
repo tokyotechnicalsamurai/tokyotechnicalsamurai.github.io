@@ -130,9 +130,8 @@
     <div id="news" class="container">
         <div class="container blur col-sm-10 col-sm-offset-1 radius">
             <h2><span class="glyphicon glyphicon-star"></span>News</h2>
-            <p class="lead">
-                2015.07.01 Tokyo Technical Samurai 活動開始
-            </p>
+            <div class="row" id="issues">
+            </div>
         </div>
     </div>
     <br>
@@ -285,14 +284,19 @@
             </div>
         </div>
     </script>
-    <script id="timelineHeadTemp" type="text/x-jsrender">
-        <li><a href="">{{:date}}</a>
-    </script>
     <script id="timelineissuesTemp" type="text/x-jsrender">
-        <li>
-            <h3>{{:title}}</h3>
-            <p class="lead ">{{:text}}</p>
-        </li>
+        <div class="col-md-12">
+            <div class="radius">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h4>{{:date}} - {{:title}}</h4>
+                        <div class="col-md-12">
+                            <p>{{:text}}</p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
     </script>
     <script src="js/main.js "></script>
 

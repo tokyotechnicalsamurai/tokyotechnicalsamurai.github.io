@@ -32,6 +32,14 @@ body {
     min-height: 200px;
 }
 
+#contact {
+	padding-bottom: 1em;
+}
+
+#contact > .container {
+	padding-bottom: 1em;
+}
+
 body {
     padding-top: 19px;
     background: #aaaaaa;

@@ -73,9 +73,14 @@ var profiledata = [
 
 var timelinedata = [
     {
+        date : '15.11.02',
+        title : '参加登録',
+        text : 'オハイオ州シンシナティ地区予選大会に登録しました!'
+    },
+    {
         date : '15.07.28',
         title : 'ホームページ更新',
-        text : '新年度のチームに更新しました'
+        text : '新年度のチームに更新しました!'
     }
 ];
 $(function () {
@@ -83,9 +88,9 @@ $(function () {
     $('#profile').append(html);
     /*
     var html = $('#timelineHeadTemp').render(timelinedata);
-    $('#dates').append(html);
+    $('#dates').append(html);*/
     var html = $('#timelineissuesTemp').render(timelinedata);
-    $('#issues').append(html);*/
+    $('#issues').append(html);
     $('a[href^=#]').click(function () {
         var speed = 500; //移動完了までの時間(sec)を指定
         var href = $(this).attr("href");

@@ -73,6 +73,11 @@ var profiledata = [
 
 var timelinedata = [
     {
+        date : '15.12.18',
+        title : 'クラウドファンディング',
+        text : '<a href="https://readyfor.jp/projects/TTS-2016">READY FOR</a>にて公開しました<br>よろしくお願いします'
+    },
+    {
         date : '15.11.02',
         title : '参加登録',
         text : 'オハイオ州シンシナティ地区予選大会に登録しました!'

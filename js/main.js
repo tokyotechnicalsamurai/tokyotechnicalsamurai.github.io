@@ -74,7 +74,7 @@ var profiledata = [
 var timelinedata = [
     {
         date : '15.12.18',
-        title : 'クラウドファンディング',
+        title : 'クラウドファンディングを開始しました!',
         text : '<a href="https://readyfor.jp/projects/TTS-2016">READY FOR</a>にて公開しました<br>よろしくお願いします'
     },
     {

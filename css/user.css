@@ -1,8 +1,15 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 html,
 body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: 'Noto Sans Japanese',sans-serif,"ヒラギノ","メイリオ";
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Noto Sans Japanese',sans-serif,"ヒラギノ","メイリオ";
 }
 
 *,
@@ -61,7 +68,7 @@ body {
     /* CSS3 */
     -webkit-border-radius: 5px;
     /* Safari,Google Chrome用 */
-    
+
     -moz-border-radius: 5px;
     /* Firefox用 */
 }
@@ -87,7 +94,7 @@ body {
     display: table;
     width: 100%;
     /* fix overflow */
-    
+
     table-layout: fixed;
 }
 
@@ -128,4 +135,17 @@ body {
 
 .col-bottom {
     vertical-align: bottom;
+}
+
+.lead {
+    text-indent:1em;
+}
+
+.caption {
+    text-indent: 1em;
+    padding-left: 1em;
+    margin-bottom: 10.5px
+}
+.caption p{
+    margin:1px;
 }

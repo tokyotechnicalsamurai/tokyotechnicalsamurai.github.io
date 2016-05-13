@@ -72,6 +72,11 @@ var profiledata = [
 ];
 
 var timelinedata = [
+	{
+		date : '16.03.28-16.04.04',
+		title : 'シンシナティ地区予選大会',
+		text : 'シンシナティ地区予選大会に参加してきました。<br>大会での様子は<a href="http://tokyotsamurai.blogspot.jp/">ブログ</a>からご覧ください'
+	},
     {
         date : '15.12.18',
         title : 'クラウドファンディングを開始しました!',
